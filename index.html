@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="main.js"></script> 
+    
+    <script>
+      function openYear(evt, year) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("year_tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("year_tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(year).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <title>PORTULÉMICAS</title>
+</head>
+<body>
+  <div>
+    <h1>PORTULÉMICAS</h1>
+  </div>
+
+  <div class="mytabs" id="placeholder">
+
+    Loading...
+
+  </div>
+</body>
+</html>
