@@ -1,80 +1,290 @@
-body {
-    background: #ccc;
-    font-family: 'Roboto', sans-serif;
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-.mytabs {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 25px;
+body{
+  background: #dedede;
 }
-.mytabs input[type="radio"] {
-    display: none;
-}
-.mytabs label {
-    padding: 25px;
-    background: #e2e2e2;
-    font-weight: bold;
-    cursor:pointer;
-}
-
-.mytabs .tab {
-    width: 100%;
-    padding: 20px;
-    background: #fff;
-    order: 1;
-    display: none;
-}
-.mytabs .tab h2 {
-    font-size: 3em;
+.body_content{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  /** If the parties are added, remove this*/
+  min-height: 80vh;
+  flex-wrap: wrap;
 }
 
-.mytabs input[type='radio']:checked + label + .tab {
-    display: block;
+/** Affiliation */
+.parties{
+  width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 5%;
+  text-align: center;
+}
+.parties ul{
+  display: inline;
+  list-style-type: none;
+  margin: 2px;
+  padding: 2px;
+  width: 100%;
+  position: flex;
+  overflow: auto;
+}
+.parties ul li{
+  display: inline;
+  align-items: center;
+  margin: 5px;
 }
 
-.mytabs input[type="radio"]:checked + label {
-    background: #fff;
-}
+/* The slider */
+.toggle {
+  --width: 80px;
+  --height: calc(var(--width) / 3);
 
-/**
-*
-*/
-
-/* Style the tab */
-.year_tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-  
-/* Style the buttons inside the tab */
-.year_tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
+  position: relative;
+  display: inline-block;
+  width: var(--width);
+  height: var(--height);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
 }
-  
-/* Change background color of buttons on hover */
-.year_tab button:hover {
-  background-color: #ddd;
-}
-  
-/* Create an active/current tablink class */
-.year_tab button.active {
-  background-color: #ccc;
-}
-  
-/* Style the tab content */
-.year_tabcontent {
+.toggle input {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+}
+.toggle .labels {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-family: sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+.toggle .labels::after {
+  content: attr(data-off);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #4d4d4d;
+  background-color: #5959599c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+.toggle .labels::before {
+  content: attr(data-on);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  background-color: var(--tooltip-color);
+  text-align: center;
+  opacity: 0;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+.toggle input:checked~.labels::after {
+  /* flip 180deg */
+  /*transform: rotateY(180deg);*/
+  opacity: 0;
+}
+.toggle input:checked~.labels::before {
+  /*transform: rotateY(180deg) scale(-1, 1);*/
+  opacity: 1;
+}
+
+/** Force break */
+.break {
+  flex-basis: 100%;
+  height: 10px;
+}
+
+/** Main Element */
+.wrapper{
+  width: 70%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+/** Year line */
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-year{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+/** Calendar contents */
+.parent{
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.child {
+  display: flex;
+  /*display: inline-block;*/
+  /*padding: 1rem 1rem;*/
+  /*vertical-align: middle;*/
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/** Months */
+.calendar_months ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  width: 100%;
+  position: flex;
+  height: 100%;
+  overflow: auto;
+}
+.calendar_months li {
+  display: block;
+  color: #000;
+  padding: 2px 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.calendar_months li.active {
+  background-color: #160c73;
+  color: white;
+  border-radius: 7%;
+}
+.calendar_months li:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  border-radius: 7%;
+}
+
+/** Weeks */
+/*
+.weeks {
+  border: 1px solid rgb(43, 255, 0);
+}
+.days li {
+  border: 1px solid rgb(17, 0, 255);
+}
+*/
+.calendar_weeks{
+  padding: 10px;
+  display: block;
+}
+.calendar_weeks ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar_weeks li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar_weeks .days{
+  margin-bottom: 10px;
+}
+.calendar_weeks .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar_weeks .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 0px 10px 0px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  /*color: #fff;*/
+  border: 1px solid #160c73;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 5%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  /*background: #160c73;*/
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+/** Circles */
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: var(--tooltip-color);
+  border-radius: 50%;
+  display: inline-block;
+  /*margin: -1px;*/
+}
+
+/** Description */
+.calendar_description{
+  width: 50%;
+  padding: 10px;
+  display: block;
+}
+.calendar_description ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  width: 100%;
+  position: flex;
+  height: 100%;
+  overflow:hidden; overflow-y:scroll;
+  white-space: pre-wrap;
+}
+.calendar_description li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
