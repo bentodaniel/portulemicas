@@ -1,88 +1,86 @@
 {
-    "2022" : {
-        "10" : {
-            "9" : [
-                {
-                    "status" : 1,
-                    "party" : "Outro",
-                    "title": "Afinal, TAP encomendou mesmo 79 BMW (e até já recebeu um)",
-                    "description": "sdafsdf sdf sd fsdf dsTAP encomendou mesmo 79 automóveis, como a TVI/CNN Portugal tinham avançado em primeira mão. Um já chegou - e vai ser devolvido. Cancelamento do contrato pode custar pagamento de indemnizações.",
-                    "image": "https://img.iol.pt/preset/604161320cf2428cda0da520/og/cnn",
-                    "url" : "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae"
-                }
-            ],
-            "17" : [
-                {
-                    "status" : 1,
-                    "party" : "Outro",
-                    "title": "TAP contrata amiga da CEO para diretora",
-                    "description": "A TAP contratou a companheira do 'personal trainer' do marido da CEO Christine Ourmières-Widener para diretora da companhia aérea.",
-                    "image": "https://eco.imgix.net/uploads/2022/08/cropped-christine-ourmieres-widener01-2.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D\u0026markscale=33\u0026markalign=center,left\u0026w=1200",
-                    "url" : "https://eco.sapo.pt/2022/10/17/ceo-da-tap-tera-contratado-amiga-para-cargo-na-companhia-aerea-avanca-a-tvi/"
-                }
-            ]
-        },
-        "11" : {
-            "1" : [
-                {
-                    "status" : 1,
-                    "party" : "PSD",
-                    "title": "Deputada do PSD gere empresa de recuperação de créditos em violação da lei",
-                    "description": "Andreia Neto, vice-presidente da bancada, não vê incompatibilidades e alega que o “Parlamento avaliou devidamente” o seu registo de interesses e nunca a chamou à atenção de nada.",
-                    "image": "https://imagens.publico.pt/imagens.aspx/1746088?tp=UH\u0026db=IMAGENS\u0026type=JPG\u0026share=1\u0026o=BarraFacebook_Publico.png",
-                    "url" : "https://www.publico.pt/2022/11/01/politica/title/deputada-psd-gere-empresa-recuperacao-creditos-violacao-lei-2025783"
-                }
-            ],
-            "3" : [
-                {
-                    "status" : 1,
-                    "party" : "PS",
-                    "title": "Firmas de Pedro Nuno Santos receberam quase €3 milhões em fundos europeus",
-                    "description": "Empresas em que Pedro Nuno Santos é sócio com o pai receberam 2,8 milhões de euros de apoios europeus. E estão a ser contempladas com verbas do PRR.",
-                    "image": "https://cdn.sabado.pt/images/2022-10/img_1200x676$2022_10_31_23_04_13_682850.jpg",
-                    "url" : "https://www.sabado.pt/portugal/detalhe/firmas-de-pedro-nuno-santos-receberam-quase-3-milhoes-em-fundos-do-prr"
-                }
-            ],
-            "6" : [
-                {
-                    "status" : 1,
-                    "party" : "PS",
-                    "title": "Miguel Alves. Secretário de Estado adjunto de António Costa afinal é arguido não em um, mas em dois processos",
-                    "description": "Miguel Alves foi constituído arguido como autarca de Caminha em dois processos por alegados ilícitos económico-financeiros que nasceram da Operação Éter e da Operação Teia. Governo desvaloriza.",
-                    "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A4096%3A2306%3Anowe%3A0%3A326%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2021%2F08%2F29005011%2Fjporfirio-congresso-ps-1dia-9-1-scaled.jpg",
-                    "url" : "https://observador.pt/especiais/miguel-alves-secretario-de-estado-de-antonio-costa-afinal-e-arguido-nao-em-um-mas-em-dois-processos/"
-                }
-            ],
-            "7" : [
-                {
-                    "status" : 1,
-                    "party" : "PS",
-                    "title": "Governo contrata jovem da JS sem experiência por 3700 euros mensais",
-                    "description": "A ministra da Presidência, Mariana Vieira da Silva, contratou um recém-licenciado de 21 anos sem experiência profissional para exercer funções no seu gabinete. A contratação foi publicada em Diário da República esta semana e denunciada pela TVI. Tiago Cunha é membro destacado da Juventude Socialista e vai receber quase 4000 euros brutos por mês. A ministra já reagiu, garantindo que a filiação partidária \"nunca foi critério\" para recrutar.",
-                    "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN\u0026type=generate\u0026guid=9bdb3dcc-6cd5-42c0-a0d5-3605d94dc70d\u0026w=800\u0026h=420\u0026watermark=true\u0026t=20221108154400",
-                    "url" : "https://www.jn.pt/nacional/governo-contrata-jovem-da-js-sem-experiencia-por-3700-euros-mensais-15330640.html"
-                }
-            ],
-            "9" : [
-                {
-                    "status" : 1,
-                    "party" : "PSD",
-                    "title": "Oeiras. Poço suspendeu mandato de vereador e PSD contratou a mãe por ajuste direto para gabinete",
-                    "description": "Cerca de um mês depois de ter anunciado a suspensão do mandato, o gabinete dos vereadores do PSD na Câmara Municipal de Oeiras contratou a mãe de Alexandre Poço para serviços de assessoria.",
-                    "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1125%3Anowe%3A0%3A30%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2022%2F01%2F30215156%2F34343538.jpg",
-                    "url" : "https://observador.pt/especiais/oeiras-poco-suspendeu-mandato-de-vereador-e-psd-contratou-a-mae-por-ajuste-direto-para-gabinete/"
-                }
-            ],
-            "11" : [
-                {
-                    "status" : 1,
-                    "party" : "PS",
-                    "title": "Medina investigado por ajustes diretos de 800 mil euros a escritório de Siza Vieira",
-                    "description": "Vereadores Duarte Cordeiro, atual ministro do Ambiente, e Graça Fonseca, ex-ministra da Cultura, também estão sob suspeita.",
-                    "image": "https://images.impresa.pt/sicnot/2022-10-21-Fernando-Medina.JPG-0b0411ed-1/1.91x1?wm=true\u0026outputFormat=jpeg",
-                    "url" : "https://sicnoticias.pt/pais/2022-11-11-Medina-investigado-por-ajustes-diretos-de-800-mil-euros-a-escritorio-de-Siza-Vieira-8fee2710"
-                }
-            ]
+  "2022": {
+    "10": {
+      "9": {
+        "-NGwrAkrAUtIhjXvWwn4": {
+          "description": "TAP encomendou mesmo 79 automóveis, como a TVI/CNN Portugal tinham avançado em primeira mão. Um já chegou - e vai ser devolvido. Cancelamento do contrato pode custar pagamento de indemnizações.",
+          "image": "https://img.iol.pt/preset/604161320cf2428cda0da520/og/cnn",
+          "party": "Outro",
+          "status": 1,
+          "title": "Afinal, TAP encomendou mesmo 79 BMW (e até já recebeu um)",
+          "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae"
         }
+      },
+      "17": {
+        "-NGwrK2LQT_kE51dQbWz": {
+          "description": "A TAP contratou a companheira do 'personal trainer' do marido da CEO Christine Ourmières-Widener para diretora da companhia aérea.",
+          "image": "https://eco.imgix.net/uploads/2022/08/cropped-christine-ourmieres-widener01-2.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "Outro",
+          "status": 1,
+          "title": "TAP contrata amiga da CEO para diretora",
+          "url": "https://eco.sapo.pt/2022/10/17/ceo-da-tap-tera-contratado-amiga-para-cargo-na-companhia-aerea-avanca-a-tvi/"
+        }
+      }
+    },
+    "11": {
+      "1": {
+        "-NGwrZGHSLUilwQlJp90": {
+          "description": "Andreia Neto, vice-presidente da bancada, não vê incompatibilidades e alega que o “Parlamento avaliou devidamente” o seu registo de interesses e nunca a chamou à atenção de nada.",
+          "image": "https://imagens.publico.pt/imagens.aspx/1746088?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "PSD",
+          "status": 1,
+          "title": "Deputada do PSD gere empresa de recuperação de créditos em violação da lei",
+          "url": "https://www.publico.pt/2022/11/01/politica/title/deputada-psd-gere-empresa-recuperacao-creditos-violacao-lei-2025783"
+        }
+      },
+      "3": {
+        "-NGwriS0F8c11rugDakq": {
+          "description": "Empresas em que Pedro Nuno Santos é sócio com o pai receberam 2,8 milhões de euros de apoios europeus. E estão a ser contempladas com verbas do PRR.",
+          "image": "https://cdn.sabado.pt/images/2022-10/img_1200x676$2022_10_31_23_04_13_682850.jpg",
+          "party": "PS",
+          "status": 1,
+          "title": "Firmas de Pedro Nuno Santos receberam quase €3 milhões em fundos europeus",
+          "url": "https://www.sabado.pt/portugal/detalhe/firmas-de-pedro-nuno-santos-receberam-quase-3-milhoes-em-fundos-do-prr"
+        }
+      },
+      "5": {
+        "-NGwrwo-fTrEj9cGdP0t": {
+          "description": "Miguel Alves foi constituído arguido como autarca de Caminha em dois processos por alegados ilícitos económico-financeiros que nasceram da Operação Éter e da Operação Teia. Governo desvaloriza.",
+          "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A4096%3A2306%3Anowe%3A0%3A326%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2021%2F08%2F29005011%2Fjporfirio-congresso-ps-1dia-9-1-scaled.jpg",
+          "party": "PS",
+          "status": 1,
+          "title": "Miguel Alves. Secretário de Estado adjunto de António Costa afinal é arguido não em um, mas em dois processos",
+          "url": "https://observador.pt/especiais/miguel-alves-secretario-de-estado-de-antonio-costa-afinal-e-arguido-nao-em-um-mas-em-dois-processos/"
+        }
+      },
+      "8": {
+        "-NGws4D0PNOFpiyZjKqX": {
+          "description": "A ministra da Presidência, Mariana Vieira da Silva, contratou um recém-licenciado de 21 anos sem experiência profissional para exercer funções no seu gabinete. A contratação foi publicada em Diário da República esta semana e denunciada pela TVI. Tiago Cunha é membro destacado da Juventude Socialista e vai receber quase 4000 euros brutos por mês. A ministra já reagiu, garantindo que a filiação partidária \"nunca foi critério\" para recrutar.",
+          "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=9bdb3dcc-6cd5-42c0-a0d5-3605d94dc70d&w=800&h=420&watermark=true&t=20221108154400",
+          "party": "PS",
+          "status": 1,
+          "title": "Governo contrata jovem da JS sem experiência por 3700 euros mensais",
+          "url": "https://www.jn.pt/nacional/governo-contrata-jovem-da-js-sem-experiencia-por-3700-euros-mensais-15330640.html"
+        },
+        "-NGwsPIKnKmMEFwhyQ7f": {
+          "description": "Cerca de um mês depois de ter anunciado a suspensão do mandato, o gabinete dos vereadores do PSD na Câmara Municipal de Oeiras contratou a mãe de Alexandre Poço para serviços de assessoria.",
+          "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1125%3Anowe%3A0%3A30%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2022%2F01%2F30215156%2F34343538.jpg",
+          "party": "PSD",
+          "status": 0,
+          "title": "Oeiras. Poço suspendeu mandato de vereador e PSD contratou a mãe por ajuste direto para gabinete",
+          "url": "https://observador.pt/especiais/oeiras-poco-suspendeu-mandato-de-vereador-e-psd-contratou-a-mae-por-ajuste-direto-para-gabinete/"
+        }
+      },
+      "11": {
+        "-NGwsoEXedmD6QuPYmLU": {
+          "description": "Vereadores Duarte Cordeiro, atual ministro do Ambiente, e Graça Fonseca, ex-ministra da Cultura, também estão sob suspeita.",
+          "image": "https://images.impresa.pt/sicnot/2022-10-21-Fernando-Medina.JPG-0b0411ed-1/1.91x1?wm=true&outputFormat=jpeg",
+          "party": "PS",
+          "status": 1,
+          "title": "Medina investigado por ajustes diretos de 800 mil euros a escritório de Siza Vieira",
+          "url": "https://sicnoticias.pt/pais/2022-11-11-Medina-investigado-por-ajustes-diretos-de-800-mil-euros-a-escritorio-de-Siza-Vieira-8fee2710"
+        }
+      }
     }
+  }
 }

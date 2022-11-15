@@ -1,3 +1,8 @@
+// DEV
+//const BASE_API_URL = 'http://localhost:3000'
+// PROD
+const BASE_API_URL = 'https://portulemicas-api.onrender.com'
+
 // storing full name of all months in array
 const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
               "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
@@ -17,8 +22,6 @@ calendarCurrYear = date.getFullYear(),
 currMonth = date.getMonth(),
 currDay = date.getDate(),
 newsListCurrYear = date.getFullYear();
-
-console.log(currDay)
 
 var json = [];
 
@@ -77,7 +80,8 @@ const getPolemsColors = (year, month, day) => {
         return res;
     }
     var parties = [];
-    for (d_data of day_data) {
+    for (obj_key in day_data) {
+        const d_data = day_data[obj_key]
         const party = d_data['party'];
         if (!parties.includes(party)) {
             parties.push(party)
@@ -108,7 +112,8 @@ const getDescriptions = (year, month, day) => {
     if (day_data === null || day_data === undefined) {
         return '<p>Nada a mostrar.</p>';
     }
-    for (d_data of day_data) {
+    for (obj_key in day_data) {
+        const d_data = day_data[obj_key]
         const party = d_data['party'];
         const status = d_data['status'];
         const link = d_data['url'];
@@ -209,23 +214,25 @@ const renderNewsList = () => {
             for (var day_key in day_values){
                 const day_objects = day_values[day_key] // List of day events
                 
-                for (obj of day_objects) {
-                    if (obj['status'] === 1) {
-                        let liTag = ''
-                        liTag += `<li>`
-                        liTag += `<a href="${obj['url']}" target="_blank">`
-                        liTag += `<img src="${obj['image']}" alt="Logo Image">`
-                        liTag += `<div class="news-text-details">`
-                        liTag += `<h2>${obj['title']}</h2>`
-                        liTag += `<div class="news-description">`
-                        liTag += `${obj['description']}`
-                        liTag += `</div>`
-                        liTag += `<p class="news-date">${day_key} de ${months[parseInt(month_key) - 1]}</p>`
-                        liTag += `</div>`
-                        liTag += `</a></li>`
+                for (obj_key in day_objects) {
+                    const obj = day_objects[obj_key]
+                    let liTag = ''
+                    liTag += `<li>`
+                    liTag += `<li class="status_${obj['status']}">`
+                    liTag += `<a href="${obj['url']}" target="_blank">`
+                    liTag += `<img src="${obj['image']}" alt="Logo Image">`
+                    liTag += `<div class="news-text-details">`
+                    liTag += `<h2>${obj['title']}`
+                    liTag += `<span class="status_text">(${obj['status'] ? "verificada" : "não verificada"})</span>`
+                    liTag += `</h2>`
+                    liTag += `<div class="news-description">`
+                    liTag += `${obj['description']}`
+                    liTag += `</div>`
+                    liTag += `<p class="news-date">${day_key} de ${months[parseInt(month_key) - 1]}</p>`
+                    liTag += `</div>`
+                    liTag += `</a></li>`
 
-                        fullLiTag = liTag + fullLiTag
-                    }
+                    fullLiTag = liTag + fullLiTag
                 }
             }
         }
@@ -240,104 +247,144 @@ const renderNewsList = () => {
  * When the document is ready, start by fetching the json, then add html to the file
  */
 $(document).ready(function () {
-    fetch("./data.json")
-        .then((res) => res.json())
+    // get json through the api
+    // if we cant use the api, then use the local json
+    fetch(`${BASE_API_URL}/api/all`, {
+        method: 'GET',
+        mode: 'cors',
+        dataType : 'jsonp',
+        headers: {
+            'Content-Type': 'application/jsonp'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        }
+    })
+    .then((response) => {
+        if (response.status === 200) {
+            return response.json()
+        }
+        else {
+            return fetch("./data.json").then((res) => res.json())
+        }
+    })
+    .then((data) => {
+        json = data
+        execute()
+    })
+});
+
+const execute = () => {
+    renderCalendar();
+    renderNewsList();
+
+    var prevNextCalendarHeaderIcon = document.querySelectorAll("#calendar-header-icons span"),
+    monthsSelection = document.querySelectorAll(".months li"),
+    daysSelection = document.querySelectorAll(".days li"),
+    prevNextNewsListHeaderIcon = document.querySelectorAll("#news-list-header-icons span");
+
+    /* Execute for calendar section */
+
+    prevNextCalendarHeaderIcon.forEach(icon => { // getting prev and next icons
+        icon.addEventListener("click", () => { // adding click event on both icons
+            // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+            calendarCurrYear = icon.id === "prev" ? calendarCurrYear - 1 : calendarCurrYear + 1;
+            date = new Date(calendarCurrYear, currMonth);
+            calendarCurrYear = date.getFullYear(); // updating current year with new date year
+            currMonth = date.getMonth(); // updating current month with new date month
+            renderCalendar(); // calling renderCalendar function
+            daysSelection = document.querySelectorAll(".days li");
+            createDayWatchers(daysSelection)
+        });
+    });
+
+    monthsSelection.forEach(month => {
+        month.addEventListener("click", () => {
+            const clicked_month_id = month.id.substring(1);
+            currMonth = parseInt(clicked_month_id)
+            date = new Date(calendarCurrYear, currMonth);
+            renderCalendar(); // calling renderCalendar function
+            daysSelection = document.querySelectorAll(".days li");
+            createDayWatchers(daysSelection)
+        });
+    });
+
+    createDayWatchers(daysSelection)
+
+    /* Listem for submissions of events */
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const partyName = inputPartyName.value;
+        const newsLink = inputLink.value;
+
+        if (!partyName) {
+            alert("Por favor, preencha o partido a que a notícia está associada.");
+            return;
+        }
+        if (!newsLink) {
+            alert("Por favor, preencha o link da notícia.");
+            return;
+        }
+
+        // send request to api
+        fetch(`${BASE_API_URL}/api/create/${calendarCurrYear}/${currMonth+1}/${currDay}`, {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify({
+                "party" : partyName,
+                "url" : newsLink
+            })
+        })
+        .then((response) => {
+            if (response.status === 201) {
+                return response.json()
+            }
+            else {
+                return null
+            }
+        })
         .then((data) => {
-            json = data;
+            if (!data) {
+                // if error, inform the user
+                alert("Não foi possível criar a notícia ou esta já existe.");
+                return;
+            }
+
+            // add to local json the just-added element
+            if (!json[calendarCurrYear]) {
+                json[calendarCurrYear] = {}
+            }
+            if (!json[calendarCurrYear][currMonth+1]) {
+                json[calendarCurrYear][currMonth+1] = {}
+            }
+            if (!json[calendarCurrYear][currMonth+1][currDay]) {
+                json[calendarCurrYear][currMonth+1][currDay] = {}
+            }
+
+            json[calendarCurrYear][currMonth+1][currDay][data['key']] = data['data']
 
             renderCalendar();
             renderNewsList();
-
-            var prevNextCalendarHeaderIcon = document.querySelectorAll("#calendar-header-icons span"),
-            monthsSelection = document.querySelectorAll(".months li"),
-            daysSelection = document.querySelectorAll(".days li"),
-            prevNextNewsListHeaderIcon = document.querySelectorAll("#news-list-header-icons span");
-
-            /* Execute for calendar section */
-
-            prevNextCalendarHeaderIcon.forEach(icon => { // getting prev and next icons
-                icon.addEventListener("click", () => { // adding click event on both icons
-                    // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
-                    calendarCurrYear = icon.id === "prev" ? calendarCurrYear - 1 : calendarCurrYear + 1;
-                    date = new Date(calendarCurrYear, currMonth);
-                    calendarCurrYear = date.getFullYear(); // updating current year with new date year
-                    currMonth = date.getMonth(); // updating current month with new date month
-                    renderCalendar(); // calling renderCalendar function
-                    daysSelection = document.querySelectorAll(".days li");
-                    createDayWatchers(daysSelection)
-                });
-            });
-
-            monthsSelection.forEach(month => {
-                month.addEventListener("click", () => {
-                    const clicked_month_id = month.id.substring(1);
-                    currMonth = parseInt(clicked_month_id)
-                    date = new Date(calendarCurrYear, currMonth);
-                    renderCalendar(); // calling renderCalendar function
-                    daysSelection = document.querySelectorAll(".days li");
-                    createDayWatchers(daysSelection)
-                });
-            });
-
-            createDayWatchers(daysSelection)
-
-            /* Listem for submissions of events */
-
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-
-                alert("Lamento, mas ainda não implementado.");
-                return
-
-                const partyName = inputPartyName.value;
-                const newsLink = inputLink.value;
-
-                if (!partyName) {
-                    alert("Por favor, preencha o partido a que a notícia está associada.");
-                    return;
-                }
-                if (!newsLink) {
-                    alert("Por favor, preencha o link da notícia.");
-                    return;
-                }
-
-                // TODO - send request to api
-                // receive response
-                // add to local json the just-added element
-
-                // if error, inform the user
-
-                /*
-
-                res += `<li style="list-style-type: none;" class="status_${status}">`
-                res += `<span class="dot-span" style="--tooltip-color: ${getPartyColor(party)};"></span>`
-                res += `<span>${party.toUpperCase()}</span>`
-                res += `<span class="status_text">(${status ? "verificada" : "não verificada"})</span>`
-                res += `<p>${d_data['title']}</p>`
-                res += `<p class="link_noticia"><a href="${link}" target="_blank">LINK</a></p>`
-                res += '</li>\n'
-
-                */
-
-                description.innerHTML = getDescriptions(calendarCurrYear, currMonth, currDay);
-
-                inputPartyName.value = '';
-                inputLink.value = '';
-
-                console.log(partyName, newsLink)
-            })
-
-            /* Execute for news list section */
-
-            prevNextNewsListHeaderIcon.forEach(icon => { // getting prev and next icons
-                icon.addEventListener("click", () => { // adding click event on both icons
-                    // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
-                    newsListCurrYear = icon.id === "prev" ? newsListCurrYear - 1 : newsListCurrYear + 1;
-                    renderNewsList();
-                });
-            });
         })
-})
+        
+        inputPartyName.value = '';
+        inputLink.value = '';
+    })
+
+    /* Execute for news list section */
+
+    prevNextNewsListHeaderIcon.forEach(icon => { // getting prev and next icons
+        icon.addEventListener("click", () => { // adding click event on both icons
+            // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+            newsListCurrYear = icon.id === "prev" ? newsListCurrYear - 1 : newsListCurrYear + 1;
+            renderNewsList();
+        });
+    });
+}
 
 const createDayWatchers = (daysSelection) => {
     daysSelection.forEach(day => {
@@ -376,8 +423,4 @@ const createDayWatchers = (daysSelection) => {
             description.innerHTML = getDescriptions(y, m, currDay);
         });
     });
-}
-
-const submitNewEvent = () => {
-
 }
