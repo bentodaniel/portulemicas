@@ -21,7 +21,7 @@ var timeleft = 29;
 var interval = setInterval(function(){ 
     if(timeleft <= 0){
         clearInterval(interval);
-        document.getElementById("countdown").innerHTML = "A carregar...";
+        countdown.innerHTML = "A carregar...";
     } else {
         countdown.innerHTML = timeleft + " segundos";
     }
