@@ -53,6 +53,43 @@ section{
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
+.loading-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  padding: 2rem;
+  margin-top: 5rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid var(--selected);
+  border-bottom: 16px solid var(--selected);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-right: 2rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.calendar-wrapper {
+  display: none;
+}
+
+.news-list {
+  display: none;
+}
+
 #calendar-header {
   display: flex;
   align-items: center;

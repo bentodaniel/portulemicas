@@ -268,6 +268,11 @@ $(document).ready(function () {
     })
     .then((data) => {
         json = data
+
+        document.getElementsByClassName("loading-wrapper")[0].style.display = 'none';
+        document.getElementsByClassName("calendar-wrapper")[0].style.display = 'block';
+        document.getElementsByClassName("news-list")[0].style.display = 'block';
+
         execute()
     })
 });
