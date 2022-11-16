@@ -1,7 +1,7 @@
 // DEV
-//const BASE_API_URL = 'http://localhost:3000'
+const DEV_API_URL = 'http://localhost:3000'
 // PROD
-const BASE_API_URL = 'https://portulemicas-api.onrender.com'
+const RENDER_API_URL = 'https://portulemicas-api.onrender.com'
 
 // storing full name of all months in array
 const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
@@ -15,6 +15,18 @@ const newsListWrapper = document.querySelector(".news-wrapper");
 const form = document.querySelector(".actions form");
 const inputPartyName = document.querySelector(".actions #fpartyname");
 const inputLink = document.querySelector(".actions #link");
+const countdown = document.querySelector(".countdown");
+
+var timeleft = 29;
+var interval = setInterval(function(){ 
+    if(timeleft <= 0){
+        clearInterval(interval);
+        document.getElementById("countdown").innerHTML = "A carregar...";
+    } else {
+        countdown.innerHTML = timeleft + " segundos";
+    }
+    timeleft -= 1;
+}, 1000);
 
 // getting new date, current year and month
 let date = new Date(),
@@ -243,38 +255,103 @@ const renderNewsList = () => {
     newsListWrapper.innerHTML = innerTag;
 }
 
+const fetchResponseWithTimeout = (base_url, endpoint, method, body) => {
+    const timeout = 1000 * 30 ;
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeout);
+    
+    const url = base_url + endpoint;
+    var options = {}
+
+    if (method === "GET") {
+        options = {
+            method: 'GET',
+            mode: 'cors',
+            dataType : 'jsonp',
+            headers: {
+                'Content-Type': 'application/jsonp'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            signal: controller.signal
+        }
+    }
+    else if (method === "POST") {
+        options = {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: body,
+            signal: controller.signal
+        }
+    }
+
+    return fetch(url, options)
+    .then((response) => {
+        clearTimeout(id);
+        
+        // status varies according to get/post
+        if (method === "GET" && response.status === 200) {
+            return response.json()
+        }
+        if (method === "POST" && response.status === 201) {
+            return response.json()
+        }
+        else {
+            throw 'There was an error.'
+        }
+    })
+    .catch((error) => {
+        //console.log("Error on fetchResponseWithTimeout : ", error)
+        throw 'Timeout error.'
+    })
+}
+
+const getCalendarData = () => {
+    // Try to get data from render
+    return fetchResponseWithTimeout(RENDER_API_URL, '/api/all', "GET", null)
+    .then((data) => {
+        return data
+    })
+    .catch((render_error) => {
+        // There was a timeout with this link, try next
+        timeleft = 29;
+
+        /*
+        return fetchResponseWithTimeout(DEV_API_URL)
+        .then((data) => {
+            return data
+        })
+        .catch((dev_error) => {
+            // There was a timeout with this link, try next
+            return fetch("./data.json").then((res) => res.json())
+        })
+        */
+
+        return fetch("./data.json").then((res) => res.json())
+    })
+}
+
 /**
  * When the document is ready, start by fetching the json, then add html to the file
  */
 $(document).ready(function () {
-    // get json through the api
-    // if we cant use the api, then use the local json
-    fetch(`${BASE_API_URL}/api/all`, {
-        method: 'GET',
-        mode: 'cors',
-        dataType : 'jsonp',
-        headers: {
-            'Content-Type': 'application/jsonp'
-            // 'Content-Type': 'application/x-www-form-urlencoded',
-        }
-    })
-    .then((response) => {
-        if (response.status === 200) {
-            return response.json()
-        }
-        else {
-            return fetch("./data.json").then((res) => res.json())
-        }
-    })
-    .then((data) => {
-        json = data
+    try {
+        getCalendarData()
+        .then((data) => {
+            json = data
 
-        document.getElementsByClassName("loading-wrapper")[0].style.display = 'none';
-        document.getElementsByClassName("calendar-wrapper")[0].style.display = 'block';
-        document.getElementsByClassName("news-list")[0].style.display = 'block';
+            document.getElementsByClassName("loading-wrapper")[0].style.display = 'none';
+            document.getElementsByClassName("calendar-wrapper")[0].style.display = 'block';
+            document.getElementsByClassName("news-list")[0].style.display = 'block';
 
-        execute()
-    })
+            execute()
+        })
+    } catch (error) {
+        console.log(error);
+    }
 });
 
 const execute = () => {
@@ -332,33 +409,16 @@ const execute = () => {
         }
 
         // send request to api
-        fetch(`${BASE_API_URL}/api/create/${calendarCurrYear}/${currMonth+1}/${currDay}`, {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: JSON.stringify({
+        fetchResponseWithTimeout(
+            RENDER_API_URL, 
+            `/api/create/${calendarCurrYear}/${currMonth+1}/${currDay}`, 
+            "POST", 
+            JSON.stringify({
                 "party" : partyName,
                 "url" : newsLink
             })
-        })
-        .then((response) => {
-            if (response.status === 201) {
-                return response.json()
-            }
-            else {
-                return null
-            }
-        })
+        )
         .then((data) => {
-            if (!data) {
-                // if error, inform the user
-                alert("Não foi possível criar a notícia ou esta já existe.");
-                return;
-            }
-
             // add to local json the just-added element
             if (!json[calendarCurrYear]) {
                 json[calendarCurrYear] = {}
@@ -375,7 +435,11 @@ const execute = () => {
             renderCalendar();
             renderNewsList();
         })
-        
+        .catch((render_error) => {
+            // There was a timeout with this link, warn the user
+            alert("Não foi possível criar a notícia ou esta já existe.");
+        })
+
         inputPartyName.value = '';
         inputLink.value = '';
     })
