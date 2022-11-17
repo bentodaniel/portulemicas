@@ -15,13 +15,14 @@ const newsListWrapper = document.querySelector(".news-wrapper");
 const form = document.querySelector(".actions form");
 const inputPartyName = document.querySelector(".actions #fpartyname");
 const inputLink = document.querySelector(".actions #link");
+const submitButton = document.querySelector(".submit-button");
 const countdown = document.querySelector(".countdown");
 
 var timeleft = 29;
 var interval = setInterval(function(){ 
     if(timeleft <= 0){
         clearInterval(interval);
-        countdown.innerHTML = "A carregar...";
+        countdown.innerHTML = "";
     } else {
         countdown.innerHTML = timeleft + " segundos";
     }
@@ -317,7 +318,7 @@ const getCalendarData = () => {
     })
     .catch((render_error) => {
         // There was a timeout with this link, try next
-        timeleft = 29;
+        //timeleft = 29;
 
         /*
         return fetchResponseWithTimeout(DEV_API_URL)
@@ -330,9 +331,38 @@ const getCalendarData = () => {
         })
         */
 
+        showToast(1, "Não foi possível conectar com o servidor.\nOs dados poderão não estar atualizados.")
         return fetch("./data.json").then((res) => res.json())
     })
 }
+
+const createToastHTML = (type, message) => {
+    var types = ['bg-danger', 'bg-warning', 'bg-success', 'bg-primary']
+    let alertWrapper = document.querySelector('.toast-container');
+    let tag = ''
+
+    //tag += `<div class="toast align-items-center text-${types[type]} border-0" role="alert" aria-live="assertive" aria-atomic="true">`
+    
+    tag += `<div id="liveToast" class="toast hide text-${types[type]}" role="alert" aria-live="assertive" aria-atomic="true">`
+    tag += `<div class="d-flex">`
+    tag += `<div class="toast-body">`
+    tag += `${message}`
+    tag += `</div>`
+    tag += `<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>`
+    tag += `</div>`
+    tag += `</div>`
+
+    alertWrapper.innerHTML = tag
+}
+
+const showToast = (type, message) => {
+    createToastHTML(type, message)
+
+    let myAlert = document.querySelector(`.toast`);
+    let bsAlert = new bootstrap.Toast(myAlert);
+    
+    bsAlert.show();
+};
 
 /**
  * When the document is ready, start by fetching the json, then add html to the file
@@ -400,13 +430,33 @@ const execute = () => {
         const newsLink = inputLink.value;
 
         if (!partyName) {
-            alert("Por favor, preencha o partido a que a notícia está associada.");
+            showToast(0, "Por favor, preencha o partido a que a notícia está associada.")
+            //alert("Por favor, preencha o partido a que a notícia está associada.");
             return;
         }
         if (!newsLink) {
-            alert("Por favor, preencha o link da notícia.");
+            showToast(0, "Por favor, preencha o link da notícia.")
+            //alert("Por favor, preencha o link da notícia.");
             return;
         }
+
+        showToast(3, "A tentar adicionar notícia.\nPor favor aguarde.")
+
+        submitButton.disabled = true;
+        submitButton.style.opacity = 0.8;
+
+        var submitTimeleft = 29;
+        var submitInterval = setInterval(function(){ 
+            if(submitTimeleft <= 0){
+                clearInterval(submitInterval);
+                submitButton.innerHTML = "Submeter";
+                submitButton.disabled = false;
+                submitButton.style.opacity = 1;
+            } else {
+                submitButton.innerHTML = submitTimeleft + " segundos";
+            }
+            submitTimeleft -= 1;
+        }, 1000);
 
         // send request to api
         fetchResponseWithTimeout(
@@ -419,6 +469,11 @@ const execute = () => {
             })
         )
         .then((data) => {
+            clearInterval(submitInterval);
+            submitButton.innerHTML = "Submeter";
+            submitButton.disabled = false;
+            submitButton.style.opacity = 1;
+
             // add to local json the just-added element
             if (!json[calendarCurrYear]) {
                 json[calendarCurrYear] = {}
@@ -437,10 +492,10 @@ const execute = () => {
         })
         .catch((render_error) => {
             // There was a timeout with this link, warn the user
-            alert("Não foi possível criar a notícia ou esta já existe.");
+            //alert("Não foi possível criar a notícia ou esta já existe.");
+            showToast(0, "Não foi possível criar a notícia ou esta já existe.")
         })
 
-        inputPartyName.value = '';
         inputLink.value = '';
     })
 
