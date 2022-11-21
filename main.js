@@ -354,7 +354,7 @@ const getCalendarData = () => {
         */
 
         showToast(1, "Não foi possível conectar com o servidor.\nOs dados não serão sincronizados.")
-        return fetch("../data.json").then((res) => res.json())
+        return fetch("./data.json").then((res) => res.json())
     })
 }
 
