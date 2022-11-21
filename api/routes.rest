@@ -1,0 +1,30 @@
+// LOCALHOST
+
+### Get all
+GET http://localhost:3000/api/all
+
+### Get all from a specific year
+GET http://localhost:3000/api/all/2021
+
+### Get all from a specific year and month
+GET http://localhost:3000/api/all/2022/10
+
+### Get all from a specific year, month and day
+GET http://localhost:3000/api/all/2022/10/9
+
+### Edit/Accept an element - edit last as key
+PUT http://localhost:3000/api/update/2022/10/9/-NGs6ce9G2PKgjdIpYR6
+
+### Create an element
+POST http://localhost:3000/api/create/2022/10/9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "party": "Outro",
+    "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae"
+}
+
+### Delete an element - edit last as key
+DELETE http://localhost:3000/api/delete/2022/10/9/-NGs6Reb8nfliAF_tiAJ
+
+###
