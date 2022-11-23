@@ -29,7 +29,8 @@ app.use(function(req, res, next) {
         'http://127.0.0.1:5500', 
         'https://portulemicas.github.io', 
         'https://portulemicas.github.io/website/',
-        'http://portulemicas.com'
+        'http://portulemicas.com',
+        'https://portulemicas.com'
     ];
     const origin = req.header('Origin');
 
