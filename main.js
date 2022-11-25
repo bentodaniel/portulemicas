@@ -462,6 +462,19 @@ const execute = () => {
             return;
         }
 
+        // this allows us to know what is the date after execution
+        // even if the user selects another day in the meantime
+        const y = selectedYear;
+        const m = selectedMonth;
+        const d = currDay
+        
+        // check if its the future.. we cant add to the future
+        const selectedDate = new Date(y, m, d);
+        if (selectedDate > new Date()) {
+            showToast(0, "Não é possível prever o futuro. Por favor selecione uma data válida.")
+            return
+        }
+
         showToast(3, "A tentar adicionar notícia.\nPor favor aguarde.")
 
         submitButton.disabled = true;
@@ -479,12 +492,6 @@ const execute = () => {
             }
             submitTimeleft -= 1;
         }, 1000);
-
-        // this allows us to know what is the date after execution
-        // even if the user selects another day in the meantime
-        const y = selectedYear;
-        const m = selectedMonth;
-        const d = currDay
 
         // send request to api
         fetchResponseWithTimeout(

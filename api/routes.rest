@@ -13,10 +13,13 @@ GET http://localhost:3000/api/all/2022/10
 GET http://localhost:3000/api/all/2022/10/9
 
 ### Edit/Accept an element - edit last as key
-PUT http://localhost:3000/api/update/2022/10/9/-NGs6ce9G2PKgjdIpYR6
+PUT http://localhost:3000/api/update/status/2022/10/9/-NGs6ce9G2PKgjdIpYR6
+
+### Generate archive for an element - edit last as key
+PUT http://localhost:3000/api/update/archive/2023/1/1/-NHk2B5-y-DDLDAr7qAG
 
 ### Create an element
-POST http://localhost:3000/api/create/2022/10/9 HTTP/1.1
+POST http://localhost:3000/api/create/2023/1/1 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -25,6 +28,6 @@ Content-Type: application/json
 }
 
 ### Delete an element - edit last as key
-DELETE http://localhost:3000/api/delete/2022/10/9/-NGs6Reb8nfliAF_tiAJ
+DELETE http://localhost:3000/api/delete/2023/1/1/-NHk2B5-y-DDLDAr7qAG
 
 ###
