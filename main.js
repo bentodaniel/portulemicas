@@ -137,12 +137,17 @@ const getDescriptions = (year, month, day) => {
         const party = d_data['party'];
         const status = d_data['status'];
         const link = d_data['url'];
+        const archiveLink = d_data['archive'];
+
         res += `<li style="list-style-type: none;">`// class="status_${status}">`
         res += `<span class="dot-span" style="--tooltip-color: ${getPartyColor(party)};"></span>`
         res += `<span>${party.toUpperCase()}</span>`
         //res += `<span class="status_text">(${status ? "verificada" : "não verificada"})</span>`
         res += `<p>${d_data['title']}</p>`
         res += `<p class="link_noticia"><a href="${link}" target="_blank">LINK</a></p>`
+        if (archiveLink) {
+            res += `<p class="link_noticia"><a href="${archiveLink}" target="_blank">ARCHIVE</a></p>`
+        }
         res += `<button onclick="document.getElementById('id01').style.display='block'; setRemoveObjectKey(this,\'${obj_key}\')"><i class="fa fa-trash" aria-hidden="true"></i></button>`
         res += '</li>\n'
     }
@@ -529,6 +534,11 @@ const execute = () => {
 
             daysSelection = document.querySelectorAll(".days li");
             createDayWatchers(daysSelection)
+
+
+            // TODO - we need to make a request to generate the archived url and then update the calendar
+
+
         })
         .catch((render_error) => {
             // There was a timeout with this link, warn the user
@@ -654,7 +664,9 @@ function executeRemove() {
         removeBtn.disabled = false;
         removeBtn.style.opacity = 1;
 
-        delete json[y][m+1][d][objKey]
+        // this delete must remove the parents as well if the parent is just an empty object
+        // ex: a : { 1 : 'hello' }  ->  a : { }   (when we remove a[1])
+        recursiveDeleteObj(y, m+1, d, objKey)
 
         renderCalendar();
         renderNewsList();
@@ -679,5 +691,25 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+}
+
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
+
+function recursiveDeleteObj(year, month, day, key) {
+    delete json[year][month][day][key]
+
+    if (isEmpty(json[year][month][day])) {
+        delete json[year][month][day]
+
+        if (isEmpty(json[year][month])) {
+            delete json[year][month]
+
+            if (isEmpty(json[year])) {
+                delete json[year]
+            }
+        }
     }
 }
