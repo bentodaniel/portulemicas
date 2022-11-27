@@ -140,24 +140,24 @@ app.put('/api/update/archive/:year/:month/:day/:key', function (req, res) {
     const day = req.params.day;
     const key = req.params.key;
 
-    let ref = db.ref(`/${year}/${month}/${day}/${key}`);
-    ref.once('value', (snapshot) => {
-        var value = snapshot.val()
-        if (!value) {
-            return res.status(404).send({"error" : NO_EXISTS_ERROR_MESSAGE});
+    // make request to robustlinks.mementoweb api to archive the link
+    // the field we want is data-versionurl
+    request(
+    `https://robustlinks.mementoweb.org/api/?url=${encodeURIComponent(value['url'])}`, 
+    { json: true }, 
+    (error, response, body) => {
+        if (error) { 
+            return res.status(500).send({"error": ERROR_MESSAGE});
         }
-        else {
-            // make request to robustlinks.mementoweb api to archive the link
-            // the field we want is data-versionurl
-            request(
-            `https://robustlinks.mementoweb.org/api/?url=${encodeURIComponent(value['url'])}`, 
-            { json: true }, 
-            (error, response, body) => {
-                if (error) { 
-                    return res.status(500).send({"error": ERROR_MESSAGE});
+                            
+        try {
+            let ref = db.ref(`/${year}/${month}/${day}/${key}`);
+            ref.once('value', (snapshot) => {
+                var value = snapshot.val()
+                if (!value) {
+                    return res.status(404).send({"error" : NO_EXISTS_ERROR_MESSAGE});
                 }
-                        
-                try {
+                else {
                     ref.update({"archive": body['data-versionurl']})
                     .then(function() {
                         value['archive'] = body['data-versionurl']
@@ -167,10 +167,10 @@ app.put('/api/update/archive/:year/:month/:day/:key', function (req, res) {
                         res.status(500).send({"error": UPDATE_ERROR_MESSAGE})
                     });
                 }
-                catch(e) {
-                    return res.status(500).send({"error": ERROR_MESSAGE})
-                }
             })
+        }
+        catch(e) {
+            return res.status(500).send({"error": ERROR_MESSAGE})
         }
     })
 })
