@@ -16,7 +16,7 @@ GET http://localhost:3000/api/all/2022/10/9
 PUT http://localhost:3000/api/update/status/2022/10/9/-NGs6ce9G2PKgjdIpYR6
 
 ### Generate archive for an element - edit last as key
-PUT http://localhost:3000/api/update/archive/2023/1/1/-NHk2B5-y-DDLDAr7qAG
+PUT http://localhost:3000/api/update/archive/2023/1/1/-NHvAxPGiCrvL4M7eZm3
 
 ### Create an element
 POST http://localhost:3000/api/create/2023/1/1 HTTP/1.1
