@@ -50,6 +50,7 @@ var json = [];
  * @param {*} party The party
  */
 const getPartyColor = (party) => {
+    
     const partido = party.toLowerCase()
 
     if (partido === 'pcp') {
@@ -118,19 +119,22 @@ const getPolemsColors = (year, month, day) => {
  * @param {*} month 
  * @param {*} day 
  */
-const getDescriptions = (year, month, day) => {
+const renderDescriptions = (year, month, day) => {
     var res = '';
     year_data = json[year]
     if (year_data === null || year_data === undefined) {
-        return '<p>Nada a mostrar.</p>';
+        description.innerHTML = '<p>Nada a mostrar.</p>';
+        return
     }
     month_data = year_data[month+1]
     if (month_data === null || month_data === undefined) {
-        return '<p>Nada a mostrar.</p>';
+        description.innerHTML = '<p>Nada a mostrar.</p>';
+        return
     }
     day_data = month_data[day]
     if (day_data === null || day_data === undefined) {
-        return '<p>Nada a mostrar.</p>';
+        description.innerHTML = '<p>Nada a mostrar.</p>';
+        return
     }
     for (obj_key in day_data) {
         const d_data = day_data[obj_key]
@@ -146,12 +150,14 @@ const getDescriptions = (year, month, day) => {
         res += `<p>${d_data['title']}</p>`
         res += `<p class="link_noticia"><a href="${link}" target="_blank">LINK</a></p>`
         if (archiveLink) {
-            res += `<p class="link_noticia"><a href="${archiveLink}" target="_blank">ARCHIVE</a></p>`
+            res += `<p class="link_noticia"><a href="${archiveLink}" target="_blank">ARQUIVO</a></p>`
         }
         res += `<button onclick="document.getElementById('id01').style.display='block'; setRemoveObjectKey(this,\'${obj_key}\')"><i class="fa fa-trash" aria-hidden="true"></i></button>`
         res += '</li>\n'
     }
-    return res;
+
+    // Change the description accordingly
+    description.innerHTML = res;
 }
 
 /**
@@ -222,8 +228,7 @@ const renderCalendar = () => {
     currentCalendarDate.innerText = `${calendarCurrYear}`; // passing current mon and yr as currentCalendarDate text
     daysTag.innerHTML = liTag;
 
-    // Change the description accordingly
-    description.innerHTML = getDescriptions(calendarCurrYear, currMonth, currDay);
+    renderDescriptions(calendarCurrYear, currMonth, currDay);
 }
 
 const renderNewsList = () => {
@@ -275,42 +280,15 @@ const fetchResponseWithTimeout = (base_url, endpoint, method, body) => {
     const id = setTimeout(() => controller.abort(), timeout);
     
     const url = base_url + endpoint;
-    var options = {}
-
-    if (method === "GET") {
-        options = {
-            method: 'GET',
-            mode: 'cors',
-            dataType : 'jsonp',
-            headers: {
-                'Content-Type': 'application/jsonp'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            signal: controller.signal
-        }
-    }
-    else if (method === "POST") {
-        options = {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: body,
-            signal: controller.signal
-        }
-    }
-    else if (method === "DELETE") {
-        options = {
-            method: 'DELETE',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            signal: controller.signal
-        }
+    const options = {
+        method: method,
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: body,
+        signal: controller.signal
     }
 
     return fetch(url, options)
@@ -324,7 +302,7 @@ const fetchResponseWithTimeout = (base_url, endpoint, method, body) => {
         else if (method === "POST" && response.status === 201) {
             return response.json()
         }
-        else if (method === "DELETE" && response.status === 202) {
+        else if ((method === "DELETE" || method === "PUT") && response.status === 202) {
             return response.json()
         }
         else {
@@ -504,11 +482,11 @@ const execute = () => {
             `/api/create/${y}/${m+1}/${d}`, 
             "POST", 
             JSON.stringify({
-                "party" : partyName,
+                "party" : partyName.toUpperCase(),
                 "url" : newsLink
             })
         )
-        .then((data) => {
+        .then((post_data) => {
             clearInterval(submitInterval);
             submitButton.innerHTML = "Submeter";
             submitButton.disabled = false;
@@ -527,7 +505,7 @@ const execute = () => {
                 json[y][m+1][d] = {}
             }
 
-            json[y][m+1][d][data['key']] = data['data']
+            json[y][m+1][d][post_data['key']] = post_data['data']
 
             renderCalendar();
             renderNewsList();
@@ -535,15 +513,39 @@ const execute = () => {
             daysSelection = document.querySelectorAll(".days li");
             createDayWatchers(daysSelection)
 
+            showToast(3, `A tentar gerar link arquivo para a notícia do dia ${y}/${m+1}/${d}.`)
 
-            // TODO - we need to make a request to generate the archived url and then update the calendar
+            // send a request to generate the archived url and then update the calendar
+            fetchResponseWithTimeout(
+                RENDER_API_URL, 
+                `/api/update/archive/${y}/${m+1}/${d}/${post_data['key']}`, 
+                "PUT", 
+                null
+            )
+            .then((update_data) => {
+                try {
+                    if (json[y][m+1][d][post_data['key']]) {
+                        json[y][m+1][d][post_data['key']] = update_data
+                    }
+                }
+                catch (e) {}
 
+                showToast(2, `Link arquivo para a notícia do dia ${y}/${m+1}/${d} gerado com sucesso.`)
 
+                // in the end, re-render the descriptions to add the archive tag
+                // re-render for the selected day now, 
+                // not the one that was selected when we started the submission
+                // (this prevents us showing a wrong description if the selected day is changed in the meantime)
+                renderDescriptions(selectedYear, selectedMonth, currDay);
+            })
+            .catch((update_error) => {
+                showToast(0, `Não foi possível gerar link arquivo para a notícia do dia ${y}/${m+1}/${d}.`)
+            })
         })
-        .catch((render_error) => {
+        .catch((post_error) => {
             // There was a timeout with this link, warn the user
             //alert("Não foi possível criar a notícia ou esta já existe.");
-            showToast(0, "Não foi possível criar a notícia ou esta já existe.")
+            showToast(0, `Não foi possível criar a notícia do dia ${y}/${m+1}/${d}, ou esta já existe.`)
 
             clearInterval(submitInterval);
             submitButton.innerHTML = "Submeter";
@@ -599,7 +601,7 @@ const createDayWatchers = (daysSelection) => {
             });
             day.classList.add("selected");
 
-            description.innerHTML = getDescriptions(selectedYear, selectedMonth, currDay);
+            renderDescriptions(selectedYear, selectedMonth, currDay);
         });
     });
 }
