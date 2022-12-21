@@ -247,6 +247,20 @@ const renderCalendar = () => {
     renderDescriptions(calendarCurrYear, currMonth, currDay);
 }
 
+const sortAlphaNum = (a, b) => {
+    const aA = a.substring(2);
+    const bB = b.substring(2);
+    var aN = parseInt(aA);
+    var bN = parseInt(bB);
+    return aN === bN ? 0 : aN > bN ? 1 : -1;
+}
+
+const stringifyDate = (month_key, day_key) => {
+    const month = month_key.substring(2);
+    const day = day_key.substring(2);
+    return `${day} de ${months[parseInt(month) - 1]}`
+}
+
 const renderNewsList = () => {
     currentNewsListDate.innerText = `${newsListCurrYear}`;
     let innerTag = '';
@@ -256,9 +270,10 @@ const renderNewsList = () => {
     }
     else {
         let fullLiTag = ''
-        for (var month_key in year_data){
+        for (var month_key of Object.keys(year_data).sort(sortAlphaNum)){
             const day_values = year_data[month_key]
-            for (var day_key in day_values){
+            
+            for (var day_key of Object.keys(day_values).sort(sortAlphaNum)){
                 const day_objects = day_values[day_key] // List of day events
                 
                 for (obj_key in day_objects) {
@@ -275,7 +290,7 @@ const renderNewsList = () => {
                     liTag += `<div class="news-description">`
                     liTag += `${obj['description']}`
                     liTag += `</div>`
-                    liTag += `<p class="news-date">${day_key} de ${months[parseInt(month_key) - 1]}</p>`
+                    liTag += `<p class="news-date">${stringifyDate(month_key, day_key)}</p>`
                     liTag += `</div>`
                     liTag += `</a></li>`
 
