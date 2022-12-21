@@ -332,10 +332,6 @@ const fetchResponseWithTimeout = (base_url, endpoint, method, body) => {
 }
 
 const getCalendarData = () => {
-
-    return fetch("./data.json").then((res) => res.json())
-
-
     // Try to get data from render
     return fetchResponseWithTimeout(RENDER_API_URL, '/api/all', "GET", null)
     .then((data) => {
