@@ -100,15 +100,15 @@ const getFlairPTag = (data) => {
  */
 const getPolemsColors = (year, month, day) => {
     var res = ''
-    year_data = json[year]
+    year_data = json[`y_${year}`]
     if (year_data === null || year_data === undefined) {
         return res;
     }
-    month_data = year_data[month+1]
+    month_data = year_data[`m_${month+1}`]
     if (month_data === null || month_data === undefined) {
         return res;
     }
-    day_data = month_data[day]
+    day_data = month_data[`d_${day}`]
     if (day_data === null || day_data === undefined) {
         return res;
     }
@@ -133,17 +133,17 @@ const getPolemsColors = (year, month, day) => {
  */
 const renderDescriptions = (year, month, day) => {
     var res = '';
-    year_data = json[year]
+    year_data = json[`y_${year}`]
     if (year_data === null || year_data === undefined) {
         description.innerHTML = '<p>Nada a mostrar.</p>';
         return
     }
-    month_data = year_data[month+1]
+    month_data = year_data[`m_${month+1}`]
     if (month_data === null || month_data === undefined) {
         description.innerHTML = '<p>Nada a mostrar.</p>';
         return
     }
-    day_data = month_data[day]
+    day_data = month_data[`d_${day}`]
     if (day_data === null || day_data === undefined) {
         description.innerHTML = '<p>Nada a mostrar.</p>';
         return
@@ -250,7 +250,7 @@ const renderCalendar = () => {
 const renderNewsList = () => {
     currentNewsListDate.innerText = `${newsListCurrYear}`;
     let innerTag = '';
-    year_data = json[newsListCurrYear]
+    year_data = json[`y_${newsListCurrYear}`]
     if (year_data === null || year_data === undefined) {
         innerTag = '<p>Wow, não há nada a mostrar.</p>';
     }
@@ -332,6 +332,10 @@ const fetchResponseWithTimeout = (base_url, endpoint, method, body) => {
 }
 
 const getCalendarData = () => {
+
+    return fetch("./data.json").then((res) => res.json())
+
+
     // Try to get data from render
     return fetchResponseWithTimeout(RENDER_API_URL, '/api/all', "GET", null)
     .then((data) => {
@@ -514,17 +518,17 @@ const execute = () => {
             showToast(2, `Notícia do dia ${y}/${m+1}/${d} criada com sucesso.`)
 
             // add to local json the just-added element
-            if (!json[y]) {
-                json[y] = {}
+            if (!json[`y_${y}`]) {
+                json[`y_${y}`] = {}
             }
-            if (!json[y][m+1]) {
-                json[y][m+1] = {}
+            if (!json[`y_${y}`][`m_${m+1}`]) {
+                json[`y_${y}`][`m_${m+1}`] = {}
             }
-            if (!json[y][m+1][d]) {
-                json[y][m+1][d] = {}
+            if (!json[`y_${y}`][`m_${m+1}`][`d_${d}`]) {
+                json[`y_${y}`][`m_${m+1}`][`d_${d}`] = {}
             }
 
-            json[y][m+1][d][post_data['key']] = post_data['data']
+            json[`y_${y}`][`m_${m+1}`][`d_${d}`][post_data['key']] = post_data['data']
 
             renderCalendar();
             renderNewsList();
@@ -543,8 +547,8 @@ const execute = () => {
             )
             .then((update_data) => {
                 try {
-                    if (json[y][m+1][d][post_data['key']]) {
-                        json[y][m+1][d][post_data['key']] = update_data
+                    if (json[`y_${y}`][`m_${m+1}`][`d_${d}`][post_data['key']]) {
+                        json[`y_${y}`][`m_${m+1}`][`d_${d}`][post_data['key']] = update_data
                     }
                 }
                 catch (e) {}
@@ -720,6 +724,10 @@ function isEmpty(obj) {
 }
 
 function recursiveDeleteObj(year, month, day, key) {
+    year = `y_${year}`
+    month = `m_${month}`
+    day = `d_${day}`
+
     delete json[year][month][day][key]
 
     if (isEmpty(json[year][month][day])) {
