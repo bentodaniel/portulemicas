@@ -169,22 +169,38 @@
 
               <div class="actions">
                 <form>
-                  <label for="fpartyname">Partido:</label><br>
-                  <select name="fpartyname" id="fpartyname">
-                    <option value="pcp">PCP</option>
-                    <option value="be">BE</option>
-                    <option value="livre">LIVRE</option>
-                    <option value="pan">PAN</option>
-                    <option value="ps">PS</option>
-                    <option value="psd">PSD</option>
-                    <option value="il">IL</option>
-                    <option value="chega">CHEGA</option>
-                    <option value="outro">Outro</option>
-                  </select>
+                  <label for="link">Link:</label><br>
+                  <input type="url" id="link" name="link" placeholder="Link (com http:// ou https://)">
+                  
                   <br>
 
-                  <label for="link">Link:</label><br>
-                  <input type="url" id="link" name="link" placeholder="Link (com http:// ou https://)"><br>
+                  <div style="display: flex;">
+                    
+                    <div style="flex: 1; margin-right: 20px;">
+                      <label for="fpartyname">Partido:</label><br>
+                      <select name="fpartyname" id="fpartyname">
+                        <option value="pcp">PCP</option>
+                        <option value="be">BE</option>
+                        <option value="livre">LIVRE</option>
+                        <option value="pan">PAN</option>
+                        <option value="ps">PS</option>
+                        <option value="psd">PSD</option>
+                        <option value="il">IL</option>
+                        <option value="chega">CHEGA</option>
+                        <option value="outro">Outro</option>
+                      </select>
+                    </div>
+                    
+                    <div style="flex: 1;">
+                      <label for="fflairname">Flair:</label><br>
+                      <select name="fflairname" id="fflairname">
+                        <option value="">Sem flair</option>
+                        <option value="verdadeiro">Verdadeiro</option>
+                        <option value="falso">Falso</option>
+                      </select>
+                    </div>
+                  
+                  </div>
 
                   <button class="submit-button" type="submit">Submeter</button> 
                 </form> 

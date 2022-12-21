@@ -24,10 +24,24 @@ Content-Type: application/json
 
 {
     "party": "Outro",
-    "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae"
+    "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae",
+    "flair" : ""
 }
 
 ### Delete an element - edit last as key
 DELETE http://localhost:3000/api/delete/2023/1/1/-NHk2B5-y-DDLDAr7qAG
 
 ###
+
+// LIVE
+
+### Post into live
+### Create an element
+POST https://portulemicas-api.onrender.com/api/create/2020/1/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "party": "Outro",
+    "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae",
+    "flair" : ""
+}

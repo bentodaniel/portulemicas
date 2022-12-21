@@ -13,8 +13,9 @@ const description = document.querySelector(".description-wrapper");
 const currentNewsListDate = document.querySelector("#news-list-current-year");
 const newsListWrapper = document.querySelector(".news-wrapper");
 const form = document.querySelector(".actions form");
-const inputPartyName = document.querySelector(".actions #fpartyname");
 const inputLink = document.querySelector(".actions #link");
+const inputPartyName = document.querySelector(".actions #fpartyname");
+const inputFlairName = document.querySelector(".actions #fflairname");
 const submitButton = document.querySelector(".submit-button");
 const countdown = document.querySelector(".countdown");
 const deleteButton = document.querySelector(".deletebtn");
@@ -82,6 +83,17 @@ const getPartyColor = (party) => {
     }
 }
 
+const getFlairPTag = (data) => {
+    const flair = data.toLowerCase()
+
+    if (flair === 'verdadeiro') {
+        return `<p style="--tooltip-color: #00ae00;">✓ Verdadeiro</p>`
+    }
+    if (flair === 'falso') {
+        return `<p style="--tooltip-color: #c90000;">✕ Falso</p>`
+    }
+}
+
 /**
  * Check if anything happened in a specific date.
  * @returns Return a string with the required html data
@@ -142,12 +154,16 @@ const renderDescriptions = (year, month, day) => {
         const status = d_data['status'];
         const link = d_data['url'];
         const archiveLink = d_data['archive'];
+        const flair = d_data["flair"]
 
         res += `<li style="list-style-type: none;">`// class="status_${status}">`
         res += `<span class="dot-span" style="--tooltip-color: ${getPartyColor(party)};"></span>`
         res += `<span>${party.toUpperCase()}</span>`
         //res += `<span class="status_text">(${status ? "verificada" : "não verificada"})</span>`
         res += `<p>${d_data['title']}</p>`
+        if (flair && flair !== ''){
+            res += `<div class="flair">${getFlairPTag(flair)}</div>`
+        }
         res += `<p class="link_noticia"><a href="${link}" target="_blank">LINK</a></p>`
         if (archiveLink) {
             res += `<p class="link_noticia"><a href="${archiveLink}" target="_blank">ARQUIVO</a></p>`
@@ -433,6 +449,7 @@ const execute = () => {
 
         const partyName = inputPartyName.value;
         const newsLink = inputLink.value;
+        const flair = inputFlairName.value;
 
         if (!partyName) {
             showToast(0, "Por favor, preencha o partido a que a notícia está associada.")
@@ -483,7 +500,8 @@ const execute = () => {
             "POST", 
             JSON.stringify({
                 "party" : partyName.toUpperCase(),
-                "url" : newsLink
+                "url" : newsLink,
+                "flair" : flair.toUpperCase()
             })
         )
         .then((post_data) => {

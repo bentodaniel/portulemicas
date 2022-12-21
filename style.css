@@ -236,6 +236,17 @@ section{
 .description-wrapper li.last {
   border-bottom:none;
 }
+.flair {
+  margin-top: -15px;
+}
+.flair p {
+  background: var(--tooltip-color);
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-size: small;
+}
 
 @media screen and (max-width: 600px) {
   .calendar-months { 
