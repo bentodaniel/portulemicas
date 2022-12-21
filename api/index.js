@@ -66,7 +66,7 @@ app.get('/api/all', function (req, res) {
 });
 
 app.get('/api/all/:year', function (req, res) {
-    const year = req.params.year
+    const year = `y_${req.params.year}`;
     db.ref(`/${year}`).once('value', (snapshot) => {
         var value = snapshot.val()
         if (!value) {
@@ -79,8 +79,8 @@ app.get('/api/all/:year', function (req, res) {
 });
 
 app.get('/api/all/:year/:month', function (req, res) {
-    const year = req.params.year
-    const month = req.params.month
+    const year = `y_${req.params.year}`;
+    const month = `m_${req.params.month}`;
     db.ref(`/${year}/${month}`).once('value', (snapshot) => {
         var value = snapshot.val()
         if (!value) {
@@ -93,9 +93,9 @@ app.get('/api/all/:year/:month', function (req, res) {
 });
 
 app.get('/api/all/:year/:month/:day', function (req, res) {
-    const year = req.params.year
-    const month = req.params.month
-    const day = req.params.day
+    const year = `y_${req.params.year}`;
+    const month = `m_${req.params.month}`;
+    const day = `d_${req.params.day}`;
     db.ref(`/${year}/${month}/${day}`).once('value', (snapshot) => {
         var value = snapshot.val()
         if (!value) {
@@ -110,9 +110,9 @@ app.get('/api/all/:year/:month/:day', function (req, res) {
 /* PUT */
 
 app.put('/api/update/status/:year/:month/:day/:key', function (req, res) {
-    const year = req.params.year;
-    const month = req.params.month;
-    const day = req.params.day;
+    const year = `y_${req.params.year}`;
+    const month = `m_${req.params.month}`;
+    const day = `d_${req.params.day}`;
     const key = req.params.key;
 
     let ref = db.ref(`/${year}/${month}/${day}/${key}`);
@@ -135,9 +135,9 @@ app.put('/api/update/status/:year/:month/:day/:key', function (req, res) {
 });
 
 app.put('/api/update/archive/:year/:month/:day/:key', function (req, res) {
-    const year = req.params.year;
-    const month = req.params.month;
-    const day = req.params.day;
+    const year = `y_${req.params.year}`;
+    const month = `m_${req.params.month}`;
+    const day = `d_${req.params.day}`;
     const key = req.params.key;
 
     let ref = db.ref(`/${year}/${month}/${day}/${key}`);
@@ -187,9 +187,9 @@ app.put('/api/update/archive/:year/:month/:day/:key', function (req, res) {
 /* POST */
   
 app.post('/api/create/:year/:month/:day', function (req, res) {
-    const year = req.params.year;
-    const month = req.params.month;
-    const day = req.params.day;
+    const year = `y_${req.params.year}`;
+    const month = `m_${req.params.month}`;
+    const day = `d_${req.params.day}`;
 
     const data = req.body
 
@@ -238,9 +238,9 @@ app.post('/api/create/:year/:month/:day', function (req, res) {
 /* DELETE */
   
 app.delete('/api/delete/:year/:month/:day/:key', function (req, res) {
-    const year = req.params.year;
-    const month = req.params.month;
-    const day = req.params.day;
+    const year = `y_${req.params.year}`;
+    const month = `m_${req.params.month}`;
+    const day = `d_${req.params.day}`;
     const key = req.params.key;
 
     let ref = db.ref(`/${year}/${month}/${day}/${key}`);
