@@ -155,20 +155,28 @@ const renderDescriptions = (year, month, day) => {
         const link = d_data['url'];
         const archiveLink = d_data['archive'];
         const flair = d_data["flair"]
+        const contest = d_data["contest"]
 
-        res += `<li style="list-style-type: none;">`// class="status_${status}">`
+        res += `<li style="list-style-type: none; class="status_${status}">`
         res += `<span class="dot-span" style="--tooltip-color: ${getPartyColor(party)};"></span>`
         res += `<span>${party.toUpperCase()}</span>`
-        //res += `<span class="status_text">(${status ? "verificada" : "não verificada"})</span>`
+
+        var estado = status ? "aceite" : "ainda não aceite"
+        estado += contest && contest !== '' ? " - contestada" : ""
+
+        res += `<span class="status_text">(${estado})</span>`
         res += `<p>${d_data['title']}</p>`
         if (flair && flair !== ''){
             res += `<div class="flair">${getFlairPTag(flair)}</div>`
         }
         res += `<p class="link_noticia"><a href="${link}" target="_blank">LINK</a></p>`
         if (archiveLink) {
-            res += `<p class="link_noticia"><a href="${archiveLink}" target="_blank">ARQUIVO</a></p>`
+            res += `| <p class="link_noticia"><a href="${archiveLink}" target="_blank">ARQUIVO</a></p>`
         }
-        res += `<button onclick="document.getElementById('id01').style.display='block'; setRemoveObjectKey(this,\'${obj_key}\')"><i class="fa fa-trash" aria-hidden="true"></i></button>`
+        if (contest && contest !== '') {
+            res += `| <p class="link_noticia"><a href="${contest}" target="_blank">CONTESTAÇÃO</a></p>`
+        }
+        //res += `<button onclick="document.getElementById('id01').style.display='block'; setRemoveObjectKey(this,\'${obj_key}\')"><i class="fa fa-trash" aria-hidden="true"></i></button>`
         res += '</li>\n'
     }
 
@@ -280,12 +288,16 @@ const renderNewsList = () => {
                     const obj = day_objects[obj_key]
                     let liTag = ''
                     liTag += `<li>`
-                    liTag += `<li> `// class="status_${obj['status']}">`
+                    liTag += `<li class="status_${obj['status']}">`
                     liTag += `<a href="${obj['url']}" target="_blank">`
                     liTag += `<img src="${obj['image']}" alt="Logo Image">`
                     liTag += `<div class="news-text-details">`
                     liTag += `<h2>${obj['title']}`
-                    //liTag += `<span class="status_text">(${obj['status'] ? "verificada" : "não verificada"})</span>`
+
+                    var estado = obj['status'] ? "aceite" : "ainda não aceite"
+                    estado += obj['contest'] && obj['contest'] !== '' ? " - contestada" : ""
+
+                    liTag += `<span class="status_text">(${estado})</span>`
                     liTag += `</h2>`
                     liTag += `<div class="news-description">`
                     liTag += `${obj['description']}`
@@ -640,19 +652,20 @@ const createDayWatchers = (daysSelection) => {
     });
 }
 
-/* Description remove buttons */
+/*
+// Description remove buttons
 function setRemoveObjectKey(element, key) {
     removingObjButtonReference = element
     removingObjectKey = key;
 }
 
-/*  When we cancel the removal of an element */
+// When we cancel the removal of an element
 function cancelRemove() {
     removingObjectKey = undefined;
     removingObjButtonReference = undefined
 }
 
-/* When removing an element */
+// When removing an element
 function executeRemove() {
     if (!removingObjectKey || !removingObjButtonReference) {
         return
@@ -753,3 +766,4 @@ function recursiveDeleteObj(year, month, day, key) {
         }
     }
 }
+*/

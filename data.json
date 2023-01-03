@@ -1,18 +1,6 @@
 {
   "y_2022": {
     "m_10": {
-      "d_9": {
-        "-NGwrAkrAUtIhjXvWwn4": {
-          "archive": "https://archive.ph/pZ7wp",
-          "description": "TAP encomendou mesmo 79 automóveis, como a TVI/CNN Portugal tinham avançado em primeira mão. Um já chegou - e vai ser devolvido. Cancelamento do contrato pode custar pagamento de indemnizações.",
-          "flair": "",
-          "image": "https://img.iol.pt/preset/604161320cf2428cda0da520/og/cnn",
-          "party": "Outro",
-          "status": 1,
-          "title": "Afinal, TAP encomendou mesmo 79 BMW (e até já recebeu um)",
-          "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae"
-        }
-      },
       "d_17": {
         "-NGwrK2LQT_kE51dQbWz": {
           "archive": "https://web.archive.org/web/20221123201726/https://eco.sapo.pt/2022/10/17/ceo-da-tap-tera-contratado-amiga-para-cargo-na-companhia-aerea-avanca-a-tvi/",
@@ -22,7 +10,21 @@
           "party": "Outro",
           "status": 1,
           "title": "TAP contrata amiga da CEO para diretora",
-          "url": "https://eco.sapo.pt/2022/10/17/ceo-da-tap-tera-contratado-amiga-para-cargo-na-companhia-aerea-avanca-a-tvi/"
+          "url": "https://eco.sapo.pt/2022/10/17/ceo-da-tap-tera-contratado-amiga-para-cargo-na-companhia-aerea-avanca-a-tvi/",
+          "contest": ""
+        }
+      },
+      "d_9": {
+        "-NGwrAkrAUtIhjXvWwn4": {
+          "archive": "https://archive.ph/pZ7wp",
+          "description": "TAP encomendou mesmo 79 automóveis, como a TVI/CNN Portugal tinham avançado em primeira mão. Um já chegou - e vai ser devolvido. Cancelamento do contrato pode custar pagamento de indemnizações.",
+          "flair": "",
+          "image": "https://img.iol.pt/preset/604161320cf2428cda0da520/og/cnn",
+          "party": "Outro",
+          "status": 1,
+          "title": "Afinal, TAP encomendou mesmo 79 BMW (e até já recebeu um)",
+          "url": "https://cnnportugal.iol.pt/tap/bmw/afinal-tap-encomendou-mesmo-79-bmw-e-ate-ja-recebeu-um/20221009/6342b3150cf2ea367d5235ae",
+          "contest": ""
         }
       }
     },
@@ -36,65 +38,8 @@
           "party": "PSD",
           "status": 1,
           "title": "Deputada do PSD gere empresa de recuperação de créditos em violação da lei",
-          "url": "https://www.publico.pt/2022/11/01/politica/title/deputada-psd-gere-empresa-recuperacao-creditos-violacao-lei-2025783"
-        }
-      },
-      "d_3": {
-        "-NGwriS0F8c11rugDakq": {
-          "archive": "https://archive.ph/wip/59MP8",
-          "description": "Empresas em que Pedro Nuno Santos é sócio com o pai receberam 2,8 milhões de euros de apoios europeus. E estão a ser contempladas com verbas do PRR.",
-          "flair": "",
-          "image": "https://cdn.sabado.pt/images/2022-10/img_1200x676$2022_10_31_23_04_13_682850.jpg",
-          "party": "PS",
-          "status": 1,
-          "title": "Firmas de Pedro Nuno Santos receberam quase €3 milhões em fundos europeus",
-          "url": "https://www.sabado.pt/portugal/detalhe/firmas-de-pedro-nuno-santos-receberam-quase-3-milhoes-em-fundos-do-prr"
-        }
-      },
-      "d_5": {
-        "-NGwrwo-fTrEj9cGdP0t": {
-          "archive": "https://archive.ph/wip/eclRk",
-          "description": "Miguel Alves foi constituído arguido como autarca de Caminha em dois processos por alegados ilícitos económico-financeiros que nasceram da Operação Éter e da Operação Teia. Governo desvaloriza.",
-          "flair": "",
-          "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A4096%3A2306%3Anowe%3A0%3A326%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2021%2F08%2F29005011%2Fjporfirio-congresso-ps-1dia-9-1-scaled.jpg",
-          "party": "PS",
-          "status": 1,
-          "title": "Miguel Alves. Secretário de Estado adjunto de António Costa afinal é arguido não em um, mas em dois processos",
-          "url": "https://observador.pt/especiais/miguel-alves-secretario-de-estado-de-antonio-costa-afinal-e-arguido-nao-em-um-mas-em-dois-processos/"
-        }
-      },
-      "d_8": {
-        "-NGws4D0PNOFpiyZjKqX": {
-          "archive": "https://web.archive.org/web/20221123202421/https://www.jn.pt/nacional/governo-contrata-jovem-da-js-sem-experiencia-por-3700-euros-mensais-15330640.html",
-          "description": "A ministra da Presidência, Mariana Vieira da Silva, contratou um recém-licenciado de 21 anos sem experiência profissional para exercer funções no seu gabinete. A contratação foi publicada em Diário da República esta semana e denunciada pela TVI. Tiago Cunha é membro destacado da Juventude Socialista e vai receber quase 4000 euros brutos por mês. A ministra já reagiu, garantindo que a filiação partidária \"nunca foi critério\" para recrutar.",
-          "flair": "",
-          "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=9bdb3dcc-6cd5-42c0-a0d5-3605d94dc70d&w=800&h=420&watermark=true&t=20221108154400",
-          "party": "PS",
-          "status": 1,
-          "title": "Governo contrata jovem da JS sem experiência por 3700 euros mensais",
-          "url": "https://www.jn.pt/nacional/governo-contrata-jovem-da-js-sem-experiencia-por-3700-euros-mensais-15330640.html"
-        },
-        "-NGwsPIKnKmMEFwhyQ7f": {
-          "archive": "https://web.archive.org/web/20221123202544/https://observador.pt/especiais/oeiras-poco-suspendeu-mandato-de-vereador-e-psd-contratou-a-mae-por-ajuste-direto-para-gabinete/",
-          "description": "Cerca de um mês depois de ter anunciado a suspensão do mandato, o gabinete dos vereadores do PSD na Câmara Municipal de Oeiras contratou a mãe de Alexandre Poço para serviços de assessoria.",
-          "flair": "",
-          "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1125%3Anowe%3A0%3A30%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2022%2F01%2F30215156%2F34343538.jpg",
-          "party": "PSD",
-          "status": 1,
-          "title": "Oeiras. Poço suspendeu mandato de vereador e PSD contratou a mãe por ajuste direto para gabinete",
-          "url": "https://observador.pt/especiais/oeiras-poco-suspendeu-mandato-de-vereador-e-psd-contratou-a-mae-por-ajuste-direto-para-gabinete/"
-        }
-      },
-      "d_9": {
-        "-NHZiknf-uxO3BJLc1Fx": {
-          "archive": "https://archive.ph/wip/4D9um",
-          "description": "A maioria dos contratos foi feita por ajuste direto e tem a assinatura de Miguel Alves.",
-          "flair": "",
-          "image": "https://images.impresa.pt/sicnot/2022-11-09-Assinatura-contrato-6c1b45cd/1.91x1?wm=true&outputFormat=jpeg",
-          "party": "ps",
-          "status": 1,
-          "title": "Miguel Alves terá assinado contratos de milhares com empresas ligadas a candidata do PS",
-          "url": "https://sicnoticias.pt/pais/2022-11-09-Miguel-Alves-tera-assinado-contratos-de-milhares-com-empresas-ligadas-a-candidata-do-PS-2bec3aeb"
+          "url": "https://www.publico.pt/2022/11/01/politica/title/deputada-psd-gere-empresa-recuperacao-creditos-violacao-lei-2025783",
+          "contest": ""
         }
       },
       "d_11": {
@@ -106,7 +51,8 @@
           "party": "PS",
           "status": 1,
           "title": "Medina investigado por ajustes diretos de 800 mil euros a escritório de Siza Vieira",
-          "url": "https://sicnoticias.pt/pais/2022-11-11-Medina-investigado-por-ajustes-diretos-de-800-mil-euros-a-escritorio-de-Siza-Vieira-8fee2710"
+          "url": "https://sicnoticias.pt/pais/2022-11-11-Medina-investigado-por-ajustes-diretos-de-800-mil-euros-a-escritorio-de-Siza-Vieira-8fee2710",
+          "contest": ""
         }
       },
       "d_12": {
@@ -118,7 +64,8 @@
           "party": "ps",
           "status": 1,
           "title": "Exclusivo: Governo nomeou três técnicas especialistas e uma adjunta sem licenciaturas com ordenados de 3 e 4 mil euros",
-          "url": "https://cnnportugal.iol.pt/governo/polemica/exclusivo-governo-nomeou-tres-tecnicas-especialistas-e-uma-adjunta-sem-licenciaturas-com-ordenados-de-3-e-4-mil-euros/20221112/636ff6900cf2254fb281e052"
+          "url": "https://cnnportugal.iol.pt/governo/polemica/exclusivo-governo-nomeou-tres-tecnicas-especialistas-e-uma-adjunta-sem-licenciaturas-com-ordenados-de-3-e-4-mil-euros/20221112/636ff6900cf2254fb281e052",
+          "contest": ""
         }
       },
       "d_14": {
@@ -130,7 +77,8 @@
           "party": "outro",
           "status": 1,
           "title": "Presidente do ISQ terá comprado Audi por 50 euros ao próprio instituto — que recebe subvenções estatais",
-          "url": "https://observador.pt/2022/11/14/presidente-do-isq-tera-comprado-audi-por-50-euros-ao-proprio-instituto-que-recebe-subvencoes-estatais/"
+          "url": "https://observador.pt/2022/11/14/presidente-do-isq-tera-comprado-audi-por-50-euros-ao-proprio-instituto-que-recebe-subvencoes-estatais/",
+          "contest": ""
         }
       },
       "d_15": {
@@ -142,7 +90,8 @@
           "party": "ps",
           "status": 1,
           "title": "Costa pagou mais de 80 mil euros a Miguel Alves em ajustes diretos quando era autarca em Lisboa",
-          "url": "https://www.dn.pt/politica/costa-pagou-mais-de-80-mil-euros-a-miguel-alves-em-ajustes-diretos-quando-era-autarca-em-lisboa-15353002.html"
+          "url": "https://www.dn.pt/politica/costa-pagou-mais-de-80-mil-euros-a-miguel-alves-em-ajustes-diretos-quando-era-autarca-em-lisboa-15353002.html",
+          "contest": ""
         },
         "-NHZjRI6DtFToAncG8LF": {
           "archive": "https://archive.ph/wip/qnNsc",
@@ -152,7 +101,8 @@
           "party": "ps",
           "status": 1,
           "title": "PS entrega proposta que perdoa multa milionária aplicada a antigos governantes (incluindo do próprio PS)",
-          "url": "https://cnnportugal.iol.pt/erse/oe2023/ps-entrega-proposta-que-perdoa-multa-milionaria-aplicada-a-antigos-governantes-incluindo-do-proprio-ps/20221115/6373b7d80cf255d6e13a9333"
+          "url": "https://cnnportugal.iol.pt/erse/oe2023/ps-entrega-proposta-que-perdoa-multa-milionaria-aplicada-a-antigos-governantes-incluindo-do-proprio-ps/20221115/6373b7d80cf255d6e13a9333",
+          "contest": ""
         },
         "-NHZjmdWaEwQiyo_5k5b": {
           "archive": "https://web.archive.org/web/20221123203623/https://www.publico.pt/2022/11/15/sociedade/noticia/escolas-acumulam-200-mil-computadores-entregar-pagos-prr-2027697",
@@ -162,7 +112,8 @@
           "party": "outro",
           "status": 1,
           "title": "Escolas acumulam 200 mil computadores por entregar e pagos pelo PRR",
-          "url": "https://www.publico.pt/2022/11/15/sociedade/noticia/escolas-acumulam-200-mil-computadores-entregar-pagos-prr-2027697"
+          "url": "https://www.publico.pt/2022/11/15/sociedade/noticia/escolas-acumulam-200-mil-computadores-entregar-pagos-prr-2027697",
+          "contest": ""
         }
       },
       "d_17": {
@@ -174,7 +125,8 @@
           "party": "ps",
           "status": 1,
           "title": "Dois terços da ajuda prometida por Siza Vieira na pandemia ficaram pelo caminho",
-          "url": "https://www.publico.pt/2022/11/17/economia/noticia/dois-tercos-ajuda-prometida-siza-vieira-pandemia-ficaram-caminho-2028048"
+          "url": "https://www.publico.pt/2022/11/17/economia/noticia/dois-tercos-ajuda-prometida-siza-vieira-pandemia-ficaram-caminho-2028048",
+          "contest": ""
         }
       },
       "d_24": {
@@ -184,9 +136,10 @@
           "flair": "",
           "image": "https://cdn1.newsplex.pt/fotos/2022/11/24/838118.png?type=Artigo",
           "party": "PCP",
-          "status": 0,
+          "status": 1,
           "title": "PCP vota contra classificação da Rússia como Estado 'patrocinador do terrorismo'",
-          "url": "https://sol.sapo.pt/artigo/786294/pcp-vota-contra-classificacao-da-r-ssia-como-estado-patrocinador-do-terrorismo"
+          "url": "https://sol.sapo.pt/artigo/786294/pcp-vota-contra-classificacao-da-r-ssia-como-estado-patrocinador-do-terrorismo",
+          "contest": ""
         }
       },
       "d_26": {
@@ -196,9 +149,23 @@
           "flair": "",
           "image": "https://cdn.jornaldenegocios.pt/images/2022-03/img_1200x676$2022_03_15_19_09_13_424255.jpg",
           "party": "ps",
-          "status": 0,
+          "status": 1,
           "title": "Tribunal Arbitral acusa secretária de Estado de usurpação de poderes num bingo do Porto",
-          "url": "https://www.jornaldenegocios.pt/economia/politica/detalhe/tribunal-acusa-secretaria-de-estado-de-usurpacao-de-poderes-num-bingo-do-porto"
+          "url": "https://www.jornaldenegocios.pt/economia/politica/detalhe/tribunal-acusa-secretaria-de-estado-de-usurpacao-de-poderes-num-bingo-do-porto",
+          "contest": ""
+        }
+      },
+      "d_3": {
+        "-NGwriS0F8c11rugDakq": {
+          "archive": "https://archive.ph/wip/59MP8",
+          "description": "Empresas em que Pedro Nuno Santos é sócio com o pai receberam 2,8 milhões de euros de apoios europeus. E estão a ser contempladas com verbas do PRR.",
+          "flair": "",
+          "image": "https://cdn.sabado.pt/images/2022-10/img_1200x676$2022_10_31_23_04_13_682850.jpg",
+          "party": "PS",
+          "status": 1,
+          "title": "Firmas de Pedro Nuno Santos receberam quase €3 milhões em fundos europeus",
+          "url": "https://www.sabado.pt/portugal/detalhe/firmas-de-pedro-nuno-santos-receberam-quase-3-milhoes-em-fundos-do-prr",
+          "contest": ""
         }
       },
       "d_30": {
@@ -208,9 +175,10 @@
           "flair": "",
           "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1124%3Anowe%3A0%3A104%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2022%2F04%2F29190756%2F38235615.jpg",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "Costa corta com regra que traçou de não ter familiares à mesa do Conselho de Ministros",
-          "url": "https://observador.pt/2022/11/30/costa-corta-com-regra-que-tracou-de-nao-ter-familiares-a-mesa-do-conselho-de-ministros/"
+          "url": "https://observador.pt/2022/11/30/costa-corta-com-regra-que-tracou-de-nao-ter-familiares-a-mesa-do-conselho-de-ministros/",
+          "contest": ""
         },
         "-NIrrD-ZZwQ_egtEUbZ6": {
           "archive": "https://archive.vn/wip/3qd6N",
@@ -218,121 +186,64 @@
           "flair": "VERDADEIRO",
           "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fpoligrafo.sapo.pt%2Fassets%2Fimg%2Fpoligrafo%2Ffacebook-overlay-true.png&epic=ZGY5gAaM05OtqMFUXnKlSwEdiSLD8bKNsdIFb9P33MYuRjUiP1G+4tSgF/JRZ0vvFz9H5HOjonfhOON3J3JoiDyTvQpunf7EqW9CZaEI42dA/N8=",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Rodrigo Saraiva (IL): \"Portugal é o país da UE com mais emigrantes em proporção da população residente\" - Polígrafo",
-          "url": "https://poligrafo.sapo.pt/fact-check/rodrigo-saraiva-il-portugal-e-o-pais-da-ue-com-mais-emigrantes-em-proporcao-da-populacao-residente"
+          "url": "https://poligrafo.sapo.pt/fact-check/rodrigo-saraiva-il-portugal-e-o-pais-da-ue-com-mais-emigrantes-em-proporcao-da-populacao-residente",
+          "contest": ""
+        }
+      },
+      "d_5": {
+        "-NGwrwo-fTrEj9cGdP0t": {
+          "archive": "https://archive.ph/wip/eclRk",
+          "description": "Miguel Alves foi constituído arguido como autarca de Caminha em dois processos por alegados ilícitos económico-financeiros que nasceram da Operação Éter e da Operação Teia. Governo desvaloriza.",
+          "flair": "",
+          "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A4096%3A2306%3Anowe%3A0%3A326%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2021%2F08%2F29005011%2Fjporfirio-congresso-ps-1dia-9-1-scaled.jpg",
+          "party": "PS",
+          "status": 1,
+          "title": "Miguel Alves. Secretário de Estado adjunto de António Costa afinal é arguido não em um, mas em dois processos",
+          "url": "https://observador.pt/especiais/miguel-alves-secretario-de-estado-de-antonio-costa-afinal-e-arguido-nao-em-um-mas-em-dois-processos/",
+          "contest": ""
+        }
+      },
+      "d_8": {
+        "-NGws4D0PNOFpiyZjKqX": {
+          "archive": "https://web.archive.org/web/20221123202421/https://www.jn.pt/nacional/governo-contrata-jovem-da-js-sem-experiencia-por-3700-euros-mensais-15330640.html",
+          "description": "A ministra da Presidência, Mariana Vieira da Silva, contratou um recém-licenciado de 21 anos sem experiência profissional para exercer funções no seu gabinete. A contratação foi publicada em Diário da República esta semana e denunciada pela TVI. Tiago Cunha é membro destacado da Juventude Socialista e vai receber quase 4000 euros brutos por mês. A ministra já reagiu, garantindo que a filiação partidária \"nunca foi critério\" para recrutar.",
+          "flair": "",
+          "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=9bdb3dcc-6cd5-42c0-a0d5-3605d94dc70d&w=800&h=420&watermark=true&t=20221108154400",
+          "party": "PS",
+          "status": 1,
+          "title": "Governo contrata jovem da JS sem experiência por 3700 euros mensais",
+          "url": "https://www.jn.pt/nacional/governo-contrata-jovem-da-js-sem-experiencia-por-3700-euros-mensais-15330640.html",
+          "contest": ""
+        },
+        "-NGwsPIKnKmMEFwhyQ7f": {
+          "archive": "https://web.archive.org/web/20221123202544/https://observador.pt/especiais/oeiras-poco-suspendeu-mandato-de-vereador-e-psd-contratou-a-mae-por-ajuste-direto-para-gabinete/",
+          "description": "Cerca de um mês depois de ter anunciado a suspensão do mandato, o gabinete dos vereadores do PSD na Câmara Municipal de Oeiras contratou a mãe de Alexandre Poço para serviços de assessoria.",
+          "flair": "",
+          "image": "https://wm.observador.pt/wm/obs/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1125%3Anowe%3A0%3A30%2Fq%3A85%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2022%2F01%2F30215156%2F34343538.jpg",
+          "party": "PSD",
+          "status": 1,
+          "title": "Oeiras. Poço suspendeu mandato de vereador e PSD contratou a mãe por ajuste direto para gabinete",
+          "url": "https://observador.pt/especiais/oeiras-poco-suspendeu-mandato-de-vereador-e-psd-contratou-a-mae-por-ajuste-direto-para-gabinete/",
+          "contest": ""
+        }
+      },
+      "d_9": {
+        "-NHZiknf-uxO3BJLc1Fx": {
+          "archive": "https://archive.ph/wip/4D9um",
+          "description": "A maioria dos contratos foi feita por ajuste direto e tem a assinatura de Miguel Alves.",
+          "flair": "",
+          "image": "https://images.impresa.pt/sicnot/2022-11-09-Assinatura-contrato-6c1b45cd/1.91x1?wm=true&outputFormat=jpeg",
+          "party": "ps",
+          "status": 1,
+          "title": "Miguel Alves terá assinado contratos de milhares com empresas ligadas a candidata do PS",
+          "url": "https://sicnoticias.pt/pais/2022-11-09-Miguel-Alves-tera-assinado-contratos-de-milhares-com-empresas-ligadas-a-candidata-do-PS-2bec3aeb",
+          "contest": ""
         }
       }
     },
     "m_12": {
-      "d_2": {
-        "-NIguppQVIdl5C_AV0mq": {
-          "archive": "https://archive.ph/wip/KaTJ4",
-          "description": "Devido à descida dos preços do petróleo, o Imposto sobre Produtos Petrolíferos (ISP) vai subir este mês em 3,9 cêntimos por litro de gasóleo e em 2,4 cêntimos por litro de gasolina.",
-          "flair": "",
-          "image": "https://eco.imgix.net/uploads/2022/06/cropped-pndr6969.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-          "party": "PS",
-          "status": 0,
-          "title": "Carga fiscal sobre os combustíveis volta a aumentar em dezembro",
-          "url": "https://eco.sapo.pt/2022/12/02/carga-fiscal-sobre-os-combustiveis-volta-a-aumentar-em-dezembro/"
-        },
-        "-NIguz2COduWsQz0rUcx": {
-          "archive": "https://archive.ph/wip/fkghf",
-          "description": "Atividade económica no país ficou abaixo do ano passado durante todo o mês de novembro, sinaliza indicador do Banco de Portugal",
-          "flair": "",
-          "image": "https://images.impresa.pt/expresso/2022-02-23-contacless-pagamento/1.91x1?wm=true&outputFormat=jpeg",
-          "party": "PS",
-          "status": 0,
-          "title": "Economia portuguesa no vermelho em novembro",
-          "url": "https://expresso.pt/economia/2022-12-02-Economia-portuguesa-no-vermelho-em-novembro-9046a7d8"
-        },
-        "-NIgvD0LLbfYxh3qYClD": {
-          "archive": "https://web.archive.org/web/20221207141104/https://www.publico.pt/2022/12/02/politica/noticia/marcelo-qatar-tempo-ir-odemira-2029962",
-          "description": "A ex-eurodeputada do PS criticou o Presidente da República por ainda não ter visitado o concelho de Odemira para se inteirar da situação de exploração a que muitos imigrantes estão sujeitos",
-          "flair": "",
-          "image": "https://imagens.publico.pt/imagens.aspx/1756885?tp=UH&db=IMAGENS&type=JFIF&share=1&o=BarraFacebook_ProvaDosFactos.png",
-          "party": "OUTRO",
-          "status": 0,
-          "title": "Marcelo foi ao Qatar mas nunca teve tempo para ir a Odemira?",
-          "url": "https://www.publico.pt/2022/12/02/politica/noticia/marcelo-qatar-tempo-ir-odemira-2029962"
-        }
-      },
-      "d_5": {
-        "-NIgRwPdrVi3u4TNOAJa": {
-          "archive": "https://web.archive.org/web/20221207115845/https://www.publico.pt/2022/12/05/politica/noticia/seguro-principio-separacao-poderes-beliscado-2030300",
-          "description": "Antigo secretário-geral do PS não quis comentar casos concretos como o do ex-secretário de Estado Miguel Alves ou o do livro do ex-governador do Banco de Portugal.",
-          "flair": "",
-          "image": "https://imagens.publico.pt/imagens.aspx/1757934?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
-          "party": "OUTRO",
-          "status": 0,
-          "title": "Seguro diz que princípio da separação de poderes foi “beliscado”",
-          "url": "https://www.publico.pt/2022/12/05/politica/noticia/seguro-principio-separacao-poderes-beliscado-2030300"
-        },
-        "-NIgSRJqMiO7PCDWKk4U": {
-          "archive": "https://web.archive.org/web/20221207120056/https://www.publico.pt/2022/12/05/sociedade/noticia/procurador-condenado-ha-quatro-anos-corrupcao-demitido-ministerio-publico-2030287",
-          "description": "Magistrado recebeu durante mais de três anos e meio salário bruto de 5600 euros sem trabalhar. Voltou ao Ministério Público já depois da primeira condenação, após uma longa licença sem vencimento.",
-          "flair": "",
-          "image": "https://imagens.publico.pt/imagens.aspx/1757921?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
-          "party": "OUTRO",
-          "status": 0,
-          "title": "Procurador condenado há quatro anos por corrupção foi agora demitido do Ministério Público",
-          "url": "https://www.publico.pt/2022/12/05/sociedade/noticia/procurador-condenado-ha-quatro-anos-corrupcao-demitido-ministerio-publico-2030287"
-        },
-        "-NIgTE5vZONpUP8vnVaR": {
-          "archive": "https://web.archive.org/web/20221207120425/https://eco.sapo.pt/2022/12/05/afinal-gasoleo-sobe-18-centimos-e-gasolina-14-centimos/",
-          "description": "Quando chegar à bomba para abastecer deverá pagar 1,662 euros por litro de gasóleo simples ou por litro de gasolina simples 95. Subida dos combustíveis é ditada por revisão da carga fiscal.",
-          "flair": "",
-          "image": "https://eco.imgix.net/uploads/2022/05/cropped-doc-20211017-34558600-lf-20211017-2931-2.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-          "party": "PS",
-          "status": 0,
-          "title": "Afinal, gasóleo sobe 1,8 cêntimos e gasolina 1,4 cêntimos",
-          "url": "https://eco.sapo.pt/2022/12/05/afinal-gasoleo-sobe-18-centimos-e-gasolina-14-centimos/"
-        },
-        "-NIgTkxh9fXhhurFQ9cE": {
-          "archive": "https://archive.ph/wip/NEpXa",
-          "description": "Rita Marques foi demitida como secretária de Estado do Turismo a 29 de novembro mas, quatro dias antes, foi-lhe atribuído um subsídio de alojamento com efeitos retroativos ao início da legislatura.",
-          "flair": "",
-          "image": "https://eco.imgix.net/uploads/2018/07/cropped-ritamarques-011.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-          "party": "PS",
-          "status": 0,
-          "title": "Costa atribui subsídio a Rita Marques quatro dias antes de ser demitida",
-          "url": "https://eco.sapo.pt/2022/12/05/costa-atribui-subsidio-a-rita-marques-quatro-dias-antes-de-ser-demitida/"
-        }
-      },
-      "d_6": {
-        "-NIgSr6_nuMD6oEMWhOG": {
-          "archive": "https://web.archive.org/web/20221207120253/https://24.sapo.pt/atualidade/artigos/altos-quadros-da-defesa-detidos-pela-pj-por-corrupcao",
-          "description": "Em causa estarão as obras de hospital militar de Belém",
-          "flair": "",
-          "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fsapo24.web.sapo.io%2Fassets%2Fimg%2F24-sapo%2Ffacebook-overlay.png&epic=OWVhLNyYbaZ9/X2sVgKL35VRuPXTeQTuJgraXcW3WGPyZQRYlTvxAId0/zHh64y2HprTGnnjhMe6qDM4g6BxCs5lXCTnUK+i8g+FcmH5ZWT22oY=",
-          "party": "OUTRO",
-          "status": 0,
-          "title": "Buscas no Ministério da Defesa: PJ fez cinco detenções por corrupção, três são altos quadros",
-          "url": "https://24.sapo.pt/atualidade/artigos/altos-quadros-da-defesa-detidos-pela-pj-por-corrupcao"
-        },
-        "-NIgTd_nmJD_oUoVrn1L": {
-          "archive": "https://web.archive.org/web/20221207120613/https://www.publico.pt/2022/12/06/sociedade/noticia/governo-aconselha-recurso-centros-saude-ha-14-milhoes-pessoas-medico-familia-2030313",
-          "description": "Na região de Lisboa e Vale do Tejo um quarto das pessoas não tem médico de família. Relatório Health at a Glance volta a mostrar que em Portugal se paga mal aos médicos e aos enfermeiros.",
-          "flair": "",
-          "image": "https://imagens.publico.pt/imagens.aspx/1757976?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
-          "party": "PS",
-          "status": 0,
-          "title": "Governo aconselha recurso a centros de saúde – mas há 1,4 milhões de pessoas sem médico de família",
-          "url": "https://www.publico.pt/2022/12/06/sociedade/noticia/governo-aconselha-recurso-centros-saude-ha-14-milhoes-pessoas-medico-familia-2030313"
-        }
-      },
-      "d_9": {
-        "-NIqJbeUQI55JPt9WXot": {
-          "archive": "https://web.archive.org/web/20221209095837/https://visao.sapo.pt/atualidade/politica/2022-12-09-ps-indica-marta-temido-para-vice-presidente-da-comissao-de-revisao-constitucional/",
-          "description": "O PS vai indicar a ex-ministra da Saúde Marta Temido para vice-presidente da comissão eventual de revisão constitucional e apresenta um elenco paritário em que o líder parlamentar, Eurico Brilhante Dias, será o último suplente da lista",
-          "flair": "",
-          "image": "https://images.trustinnews.pt/uploads/sites/5/2022/12/39388758_wm.jpg",
-          "party": "PS",
-          "status": 0,
-          "title": "Visão | PS indica Marta Temido para vice-presidente da comissão de revisão constitucional",
-          "url": "https://visao.sapo.pt/atualidade/politica/2022-12-09-ps-indica-marta-temido-para-vice-presidente-da-comissao-de-revisao-constitucional/"
-        }
-      },
       "d_12": {
         "-NJLukJ2fvqMV-vfCBFe": {
           "archive": "https://archive.vn/wip/Pupe0",
@@ -340,9 +251,10 @@
           "flair": "",
           "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=59d3b059-25c0-4fe7-92da-d0502b5712a5&w=800&h=420&watermark=true&t=20221212071400",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Maiores câmaras fazem ajuste direto em mais de metade das compras",
-          "url": "https://www.jn.pt/nacional/maiores-camaras-fazem-ajuste-direto-em-mais-de-metade-das-compras-15467865.html?target=conteudo_fechado"
+          "url": "https://www.jn.pt/nacional/maiores-camaras-fazem-ajuste-direto-em-mais-de-metade-das-compras-15467865.html?target=conteudo_fechado",
+          "contest": ""
         }
       },
       "d_13": {
@@ -352,9 +264,10 @@
           "flair": "",
           "image": "https://images.impresa.pt/expresso/2022-07-01-Jose-Socrates-b3c42aab/1.91x1?wm=true&outputFormat=jpeg",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Caso EDP: MP pediu a Carlos Alexandre que tirasse a Sócrates o estatuto de assistente, Sócrates pede agora a recusa de Carlos Alexandre",
-          "url": "https://expresso.pt/sociedade/2022-12-13-Caso-EDP-MP-pediu-a-Carlos-Alexandre-que-tirasse-a-Socrates-o-estatuto-de-assistente-Socrates-pede-agora-a-recusa-de-Carlos-Alexandre-264d33e6"
+          "url": "https://expresso.pt/sociedade/2022-12-13-Caso-EDP-MP-pediu-a-Carlos-Alexandre-que-tirasse-a-Socrates-o-estatuto-de-assistente-Socrates-pede-agora-a-recusa-de-Carlos-Alexandre-264d33e6",
+          "contest": ""
         }
       },
       "d_14": {
@@ -364,9 +277,10 @@
           "flair": "",
           "image": "https://imagens.publico.pt/imagens.aspx/1760806?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Bruxelas emprestou 6200 milhões a Portugal para proteger emprego e saúde na pandemia",
-          "url": "https://www.publico.pt/2022/12/14/economia/noticia/bruxelas-emprestou-6200-milhoes-portugal-proteger-emprego-saude-pandemia-2031412"
+          "url": "https://www.publico.pt/2022/12/14/economia/noticia/bruxelas-emprestou-6200-milhoes-portugal-proteger-emprego-saude-pandemia-2031412",
+          "contest": ""
         }
       },
       "d_15": {
@@ -376,9 +290,10 @@
           "flair": "",
           "image": "https://eco.imgix.net/uploads/2022/11/cropped-porto30.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Poder de compra em Portugal afastou-se da média europeia em 2021. É o 16.º entre os países do euro",
-          "url": "https://eco.sapo.pt/2022/12/15/pib-per-capita-portugues-afastou-se-da-media-europeia-em-2021-e-o-16-o-entre-os-paises-do-euro/"
+          "url": "https://eco.sapo.pt/2022/12/15/pib-per-capita-portugues-afastou-se-da-media-europeia-em-2021-e-o-16-o-entre-os-paises-do-euro/",
+          "contest": ""
         },
         "-NJLxfZMQBwccSTTa45e": {
           "archive": "https://archive.vn/wip/jQiTE",
@@ -386,9 +301,10 @@
           "flair": "VERDADEIRO",
           "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fpoligrafo.sapo.pt%2Fassets%2Fimg%2Fpoligrafo%2Ffacebook-overlay-true.png&epic=ZGU1Xz5Dk8ShFnQlT7cA2SD6vfjWVpoimy0RwGF4vzB9E30+q4ntgNFcNmpujS3AX9LpkKR+DfA8BgnPGN5XBdBi6Y+WEylh7JcTy9GWPUGElWo=",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Cotrim de Figueiredo diz que \"dois terços dos adultos ganham menos de 1.100 euros por mês\". Tem razão? - Polígrafo",
-          "url": "https://poligrafo.sapo.pt/fact-check/cotrim-de-figueiredo-diz-que-dois-tercos-dos-adultos-ganham-menos-de-1-100-euros-por-mes-tem-razao"
+          "url": "https://poligrafo.sapo.pt/fact-check/cotrim-de-figueiredo-diz-que-dois-tercos-dos-adultos-ganham-menos-de-1-100-euros-por-mes-tem-razao",
+          "contest": ""
         },
         "-NJf9b8QGJybaAqqhZm7": {
           "archive": "https://archive.vn/wip/7OLpv",
@@ -396,9 +312,10 @@
           "flair": "",
           "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=c4189981-cdb7-40d0-bd52-a35422f3bf90&w=800&h=420&watermark=true&t=20221215150100",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "Costa chama ″queques que guincham″ à IL, deputados condenam ″modos grosseiros″",
-          "url": "https://www.jn.pt/nacional/costa-chama-queques-que-guincham-a-il-deputados-condenam-modos-grosseiros-15491829.html"
+          "url": "https://www.jn.pt/nacional/costa-chama-queques-que-guincham-a-il-deputados-condenam-modos-grosseiros-15491829.html",
+          "contest": ""
         },
         "-NJfABqYqe-gEegEvn49": {
           "archive": "https://archive.vn/wip/M50Zg",
@@ -406,9 +323,10 @@
           "flair": "",
           "image": "https://images.trustinnews.pt/uploads/sites/5/2022/12/221214_AJC_20221212_ANTONIO_COSTA_0037a_wm.jpg",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "EXAME | Novo \"brilharete\" no défice, mesmo em ano de perda de poder de compra",
-          "url": "https://visao.sapo.pt/atualidade/politica/2022-12-15-novo-brilharete-no-defice-mesmo-em-ano-de-perda-de-poder-de-compra/"
+          "url": "https://visao.sapo.pt/atualidade/politica/2022-12-15-novo-brilharete-no-defice-mesmo-em-ano-de-perda-de-poder-de-compra/",
+          "contest": ""
         }
       },
       "d_16": {
@@ -418,9 +336,10 @@
           "flair": "",
           "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=4dc98b99-c64b-4243-9f52-50366c346686&w=800&h=420&watermark=true&t=20221216105600",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "António Costa: ″Pergunte a Moedas porque não me contactou, que tive a casa inundada″",
-          "url": "https://www.jn.pt/nacional/antonio-costa-pergunte-a-moedas-porque-e-que-nao-me-contactou-que-tive-a-casa-inundada-15496708.html"
+          "url": "https://www.jn.pt/nacional/antonio-costa-pergunte-a-moedas-porque-e-que-nao-me-contactou-que-tive-a-casa-inundada-15496708.html",
+          "contest": ""
         },
         "-NJp9TJOhCX06X3KPuXk": {
           "archive": "https://archive.vn/wip/DQyKu",
@@ -428,9 +347,10 @@
           "flair": "",
           "image": "https://imagenes.elpais.com/resizer/NnX_trXAWODT-_LXmyCyEICo3T8=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GX3MSL3WVH4Y4GWGE52YGD3SWU.jpg",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "El legado de la crisis del euro: Portugal sufre la segunda sangría demográfica más grave desde 1864",
-          "url": "https://elpais.com/internacional/2022-12-16/el-legado-de-la-crisis-del-euro-portugal-sufre-la-segunda-sangria-demografica-mas-grave-desde-1864.html"
+          "url": "https://elpais.com/internacional/2022-12-16/el-legado-de-la-crisis-del-euro-portugal-sufre-la-segunda-sangria-demografica-mas-grave-desde-1864.html",
+          "contest": ""
         }
       },
       "d_17": {
@@ -440,9 +360,10 @@
           "flair": "FALSO",
           "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fpoligrafo.sapo.pt%2Fassets%2Fimg%2Fpoligrafo%2Ffacebook-overlay-false.png&epic=NTk4w6VzsF0n8qpdFhED0OW8B8JEjpAjOFqoh8VvZgI0V8dOlHr0s5KIuDAMlTDmQD1kLRw86q8QTYWgCs+OekaMKKYQNPJ14UK82qehW7SFVpc=",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "António Costa à \"Visão\": \"Neste sete anos, a remuneração média subiu 20%\" - Polígrafo",
-          "url": "https://poligrafo.sapo.pt/fact-check/antonio-costa-a-visao-neste-sete-anos-a-remuneracao-media-subiu-20"
+          "url": "https://poligrafo.sapo.pt/fact-check/antonio-costa-a-visao-neste-sete-anos-a-remuneracao-media-subiu-20",
+          "contest": ""
         }
       },
       "d_18": {
@@ -452,9 +373,10 @@
           "flair": "",
           "image": "https://cdn1.newsplex.pt/fotos/2022/12/18/839973.jpg?type=Artigo",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "Corrupção: PS no olho do furacão",
-          "url": "https://sol.sapo.pt/artigo/788057/corrupcao-ps-no-olho-do-furacao"
+          "url": "https://sol.sapo.pt/artigo/788057/corrupcao-ps-no-olho-do-furacao",
+          "contest": ""
         },
         "-NJpaa9TpdISYlCGh8D0": {
           "archive": "https://web.archive.org/web/20221221165253/https://www.dn.pt/politica/governo-deve-criar-excecoes-para-lisboa-em-regimes-como-o-dos-nomadas-digitais-15495097.html",
@@ -462,9 +384,10 @@
           "flair": "",
           "image": "https://static.globalnoticias.pt/dn/image.jpg?brand=DN&type=generate&guid=db2d621e-c51d-4463-82e0-2c4199426b98&w=800&h=420&watermark=true&t=20221217233600",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "″Governo deve criar exceções para Lisboa em regimes como o dos nómadas digitais″",
-          "url": "https://www.dn.pt/politica/governo-deve-criar-excecoes-para-lisboa-em-regimes-como-o-dos-nomadas-digitais-15495097.html"
+          "url": "https://www.dn.pt/politica/governo-deve-criar-excecoes-para-lisboa-em-regimes-como-o-dos-nomadas-digitais-15495097.html",
+          "contest": ""
         }
       },
       "d_19": {
@@ -474,9 +397,10 @@
           "flair": "VERDADEIRO",
           "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fpoligrafo.sapo.pt%2Fassets%2Fimg%2Fpoligrafo%2Ffacebook-overlay-true.png&epic=YzdiligTiThF3fmTbj1GIslseZFn7FnW7krafsr4TzFfSiJVoXHB3BG2oRjWA5d0lUYX42VWsPomXxk5jPmfOJDctMhNMMjfK9xv+XddMdKTqnU=",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Mortágua diz que \"Governo prometeu que não haveria excedente orçamental em ano de crise inflacionista\" mas não cumpriu. Tem razão? - Polígrafo",
-          "url": "https://poligrafo.sapo.pt/fact-check/mortagua-diz-que-governo-prometeu-que-nao-haveria-excedente-orcamental-em-ano-de-crise-inflacionista-mas-nao-cumpriu-tem-razao"
+          "url": "https://poligrafo.sapo.pt/fact-check/mortagua-diz-que-governo-prometeu-que-nao-haveria-excedente-orcamental-em-ano-de-crise-inflacionista-mas-nao-cumpriu-tem-razao",
+          "contest": ""
         },
         "-NJpZsq63JYBiLppjDo6": {
           "archive": "https://archive.vn/wip/yvuIV",
@@ -484,9 +408,45 @@
           "flair": "",
           "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fsapo24.web.sapo.io%2Fassets%2Fimg%2F24-sapo%2Ffacebook-overlay.png&epic=MjM4RD9uSLd+UAoKITezxUCjhKdFKwxWi2Ufd6MvJttLT44cP3DLU9zXMKUSFnmMKtKizIMLbBmr63uQTtegQt+R38rH52Ghv7dmSpA0VRzyxn4=",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "De \"Marquês de Pimbal\" ao 'déjà vu' de outras maiorias. Entrevista de Costa gera desconforto entre socialistas",
-          "url": "https://24.sapo.pt/atualidade/artigos/de-marques-de-pimbal-ao-deja-vu-de-outras-maiorias-entrevista-de-costa-gera-desconforto-entre-socialistas"
+          "url": "https://24.sapo.pt/atualidade/artigos/de-marques-de-pimbal-ao-deja-vu-de-outras-maiorias-entrevista-de-costa-gera-desconforto-entre-socialistas",
+          "contest": ""
+        }
+      },
+      "d_2": {
+        "-NIguppQVIdl5C_AV0mq": {
+          "archive": "https://archive.ph/wip/KaTJ4",
+          "description": "Devido à descida dos preços do petróleo, o Imposto sobre Produtos Petrolíferos (ISP) vai subir este mês em 3,9 cêntimos por litro de gasóleo e em 2,4 cêntimos por litro de gasolina.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2022/06/cropped-pndr6969.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "Carga fiscal sobre os combustíveis volta a aumentar em dezembro",
+          "url": "https://eco.sapo.pt/2022/12/02/carga-fiscal-sobre-os-combustiveis-volta-a-aumentar-em-dezembro/",
+          "contest": ""
+        },
+        "-NIguz2COduWsQz0rUcx": {
+          "archive": "https://archive.ph/wip/fkghf",
+          "description": "Atividade económica no país ficou abaixo do ano passado durante todo o mês de novembro, sinaliza indicador do Banco de Portugal",
+          "flair": "",
+          "image": "https://images.impresa.pt/expresso/2022-02-23-contacless-pagamento/1.91x1?wm=true&outputFormat=jpeg",
+          "party": "PS",
+          "status": 1,
+          "title": "Economia portuguesa no vermelho em novembro",
+          "url": "https://expresso.pt/economia/2022-12-02-Economia-portuguesa-no-vermelho-em-novembro-9046a7d8",
+          "contest": ""
+        },
+        "-NIgvD0LLbfYxh3qYClD": {
+          "archive": "https://web.archive.org/web/20221207141104/https://www.publico.pt/2022/12/02/politica/noticia/marcelo-qatar-tempo-ir-odemira-2029962",
+          "description": "A ex-eurodeputada do PS criticou o Presidente da República por ainda não ter visitado o concelho de Odemira para se inteirar da situação de exploração a que muitos imigrantes estão sujeitos",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1756885?tp=UH&db=IMAGENS&type=JFIF&share=1&o=BarraFacebook_ProvaDosFactos.png",
+          "party": "OUTRO",
+          "status": 1,
+          "title": "Marcelo foi ao Qatar mas nunca teve tempo para ir a Odemira?",
+          "url": "https://www.publico.pt/2022/12/02/politica/noticia/marcelo-qatar-tempo-ir-odemira-2029962",
+          "contest": ""
         }
       },
       "d_20": {
@@ -496,9 +456,10 @@
           "flair": "",
           "image": "https://zap.aeiou.pt/wp-content/uploads/2019/04/8f511cf43cb2acfa90b977542544ced4.jpg",
           "party": "PS",
-          "status": 0,
+          "status": 1,
           "title": "Amigo de Sócrates acusado na Operação Marquês ainda lucra milhões com o Estado",
-          "url": "https://zap.aeiou.pt/amigo-de-socrates-lucra-milhoes-estado-513352"
+          "url": "https://zap.aeiou.pt/amigo-de-socrates-lucra-milhoes-estado-513352",
+          "contest": ""
         },
         "-NJpazSxpCRwJqyGrCPJ": {
           "archive": "https://archive.vn/wip/pefXd",
@@ -506,9 +467,10 @@
           "flair": "",
           "image": "https://static.globalnoticias.pt/dn/image.jpg?brand=DN&type=generate&guid=e028bba1-d211-4e1e-a5bd-e8de67e2c8c9&w=800&h=420&watermark=true&t=20221219233700",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Poder de compra: Seis em cada dez portugueses estão a viver pior do que em 2021",
-          "url": "https://www.dn.pt/dinheiro/poder-de-compra-seis-em-cada-dez-portugueses-estao-a-viver-pior-do-que-em-2021-15517135.html"
+          "url": "https://www.dn.pt/dinheiro/poder-de-compra-seis-em-cada-dez-portugueses-estao-a-viver-pior-do-que-em-2021-15517135.html",
+          "contest": ""
         },
         "-NJpb7IOfwyEbTCio4qE": {
           "archive": "https://archive.vn/wip/6TyCI",
@@ -516,9 +478,10 @@
           "flair": "",
           "image": "https://eco.imgix.net/uploads/2022/05/cropped-doc-20220502-38441492-_fv39465-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Banco especializado em cobrar dívidas reclama mais de 40 milhões aos hospitais do SNS",
-          "url": "https://eco.sapo.pt/2022/12/20/banco-especializado-em-cobrar-dividas-reclama-mais-de-40-milhoes-aos-hospitais-do-sns/"
+          "url": "https://eco.sapo.pt/2022/12/20/banco-especializado-em-cobrar-dividas-reclama-mais-de-40-milhoes-aos-hospitais-do-sns/",
+          "contest": ""
         }
       },
       "d_21": {
@@ -528,9 +491,265 @@
           "flair": "",
           "image": "https://cdn.cmjornal.pt/images/2022-12/img_1200x676$2022_12_20_22_28_38_1236298.jpg",
           "party": "OUTRO",
-          "status": 0,
+          "status": 1,
           "title": "Nova frota de carros de Marcelo custa mais de 500 mil euros",
-          "url": "https://www.cmjornal.pt/politica/detalhe/nova-frota-de-carros-de-marcelo-custa-mais-de-500-mil-euros"
+          "url": "https://www.cmjornal.pt/politica/detalhe/nova-frota-de-carros-de-marcelo-custa-mais-de-500-mil-euros",
+          "contest": ""
+        },
+        "-NJqaTyAdbq12H9DBnVw": {
+          "archive": "https://web.archive.org/web/20221221213222/https://www.publico.pt/2022/12/21/politica/noticia/eurodeputada-podera-apoiado-financiamento-ong-envolvida-qatargate-pe-2032266",
+          "description": "Isabel Santos apoiou alegadamente, enquanto eurodeputada, o financiamento da Fight Impunity, ONG envolvida no esquema de corrupção Qatargate, por parte do PE, quando era membro dessa ONG.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1762996?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "PS",
+          "status": 1,
+          "title": "Eurodeputada do PS terá apoiado o financiamento da ONG envolvida no “Qatargate” pelo PE",
+          "url": "https://www.publico.pt/2022/12/21/politica/noticia/eurodeputada-podera-apoiado-financiamento-ong-envolvida-qatargate-pe-2032266",
+          "contest": ""
+        }
+      },
+      "d_24": {
+        "-NK92ez6zM8jd_1TbdNa": {
+          "archive": "https://archive.vn/wip/E5lP9",
+          "description": "Quatro meses depois de sair da companhia aérea, Alexandra Reis foi nomeada presidente da NAV, também uma empresa pública.",
+          "flair": "",
+          "image": "https://cdn.cmjornal.pt/images/2022-12/img_1200x676$2022_12_23_20_48_48_1238626.jpg",
+          "party": "PS",
+          "status": 1,
+          "title": "TAP paga indemnização de 500 mil euros a governante por cessação antecipada",
+          "url": "https://www.google.com/amp/s/www.cmjornal.pt/sociedade/amp/governante-recebe-da-tap-indemnizacao-de-500-mil-euros-por-cessacao-antecipada",
+          "contest": ""
+        }
+      },
+      "d_26": {
+        "-NKNvT8WclCjW0gDLYVn": {
+          "archive": "https://web.archive.org/web/20221228133110/https://www.publico.pt/2022/12/26/politica/noticia/nao-so-administracao-tap-dar-explicacoes-ministros-tambem-2032802",
+          "description": "João Paulo Batalha, vice-presidente da Associação Frente Cívica, afirma que o Governo está a “sacudir a água do capote, mas sacodem a secretária de Estado também”.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1764159?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "PS",
+          "status": 1,
+          "title": "“Não é só a administração da TAP que tem de dar explicações, os ministros também”",
+          "url": "https://www.publico.pt/2022/12/26/politica/noticia/nao-so-administracao-tap-dar-explicacoes-ministros-tambem-2032802",
+          "contest": ""
+        }
+      },
+      "d_27": {
+        "-NKNuksJLR3bvjru7G61": {
+          "archive": "https://web.archive.org/web/20221228132804/https://www.jornaldenegocios.pt/economia/detalhe/marcelo-diz-que-a-prevencao-dos-fogos-florestais-depende-dos-portugueses",
+          "description": "As principais notícias sobre o dia económico e financeiro.",
+          "flair": "",
+          "image": "https://cdn.jornaldenegocios.pt/images/2022-12/img_1200x676$2022_12_25_20_04_13_442902.jpg",
+          "party": "OUTRO",
+          "status": 1,
+          "title": "Marcelo diz que a prevenção dos fogos florestais depende dos portugueses",
+          "url": "https://www.jornaldenegocios.pt/economia/detalhe/marcelo-diz-que-a-prevencao-dos-fogos-florestais-depende-dos-portugueses",
+          "contest": ""
+        },
+        "-NKNv2ffJ-Qy935zsoBZ": {
+          "archive": "https://archive.vn/wip/u1eIb",
+          "description": "A antiga administradora executiva chegou a pedir 1.479.250 euros para sair da TAP a meio do mandato. Recebeu 500 mil. Indemnização teve por base salário bruto sem os cortes do acordo de emergência.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2022/12/cropped-tomada-posse-secs-estado06-2.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "Alexandra Reis começou por pedir indemnização de 1,47 milhões para sair da TAP",
+          "url": "https://eco.sapo.pt/2022/12/27/alexandra-reis-comecou-por-pedir-indemnizacao-de-1-4-milhoes-para-sair-da-tap/",
+          "contest": ""
+        },
+        "-NKNvBi7gqr3qutsG8Sn": {
+          "archive": "https://archive.vn/wip/AexLE",
+          "description": "Escritório liderado por Pedro Rebelo de Sousa, irmão de Marcelo, esteve na assessoria do acordo de indemnização entre a atual secretária de Estado do Tesouro e a TAP",
+          "flair": "",
+          "image": "https://img.iol.pt/preset/63ab03520cf2aea785849c07/og/cnn",
+          "party": "OUTRO",
+          "status": 1,
+          "title": "Indemnização na TAP foi negociada por sociedade de advogados de irmão de Marcelo Rebelo de Sousa",
+          "url": "https://cnnportugal.iol.pt/marcelo-rebelo-de-sousa/irmao/indemnizacao-na-tap-foi-negociada-por-sociedade-de-advogados-de-irmao-de-marcelo-rebelo-de-sousa/20221227/63ab42d10cf2aea78584a88e",
+          "contest": ""
+        },
+        "-NKNvIokIz6Bqn0XLIJA": {
+          "archive": "https://archive.vn/wip/2ZRc5",
+          "description": "O ministro das Finanças assinou o despacho que autoriza o último cheque do Estado para a TAP, avança a CNN Portugal. Companhia recebe mais 980 milhões de euros.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2022/04/cropped-oe2022_11.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "Governo aprovou injeção de mais 980 milhões na TAP",
+          "url": "https://eco.sapo.pt/2022/12/27/governo-aprovou-injecao-de-mais-980-milhoes-na-tap/",
+          "contest": ""
+        },
+        "-NKSCWxPN_Cp7ehNoDwQ": {
+          "archive": "https://web.archive.org/web/20221229092831/https://www.publico.pt/2022/12/27/politica/noticia/alexandra-reis-abandona-governo-2032905",
+          "description": "O ministro pediu à secretária de Estado que apresentasse a demissão, o que foi “prontamente aceite”. No comunicado não há nem uma palavra sobre a causa, mas sobram elogios à demissionária.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1764431?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "PS",
+          "status": 1,
+          "title": "Medina demite Alexandra Reis para “preservar autoridade” no Ministério das Finanças",
+          "url": "https://www.publico.pt/2022/12/27/politica/noticia/alexandra-reis-abandona-governo-2032905",
+          "contest": ""
+        }
+      },
+      "d_28": {
+        "-NKNubojHMc-0xf1JCaj": {
+          "archive": "https://archive.vn/wip/q9jJL",
+          "description": "Christine Ourmières-Widener está a ganhar meio milhão de euros por ano, mas o seu salário-base inicialmente negociado foi de 720 mil euros por ano. É dos salários mais altos em Portugal - incluindo empresas privadas.",
+          "flair": "",
+          "image": "https://img.iol.pt/preset/60d4abdd0cf279ce41cde1aa/og/cnn",
+          "party": "PS",
+          "status": 1,
+          "title": "Estado paga mais à administração da TAP do que os privados pagavam",
+          "url": "https://cnnportugal.iol.pt/tap/christine-ourmieres-widener/estado-paga-mais-a-administracao-da-tap-do-que-os-privados-pagavam/20221228/63ab9aed0cf255d6e142ebd7",
+          "contest": ""
+        }
+      },
+      "d_29": {
+        "-NKSC9JLohR3zysGeLlR": {
+          "archive": "https://archive.vn/wip/idOjP",
+          "description": "O ministro apresentou a demissão ao primeiro-ministro e o pedido foi aceite. Pedro Nuno Santos revela que não tinha conhecimento do acordo de indemnização da TAP, mas sim o seu secretário de Estado.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2022/09/pedro-nuno-santos-costa-tap.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "Pedro Nuno Santos apresenta a demissão",
+          "url": "https://eco.sapo.pt/2022/12/29/pedro-nuno-santos-apresenta-a-demissao/",
+          "contest": ""
+        }
+      },
+      "d_30": {
+        "-NKmrvpeB5lBnUSSCVQ6": {
+          "archive": "https://archive.li/wip/W1xxL",
+          "description": "Governo mantém em janeiro os mecanismos, em sede de Imposto sobre os Produtos Petrolíferos, que permitem subsidiar o preço da gasolina e gasóleo. Mas há um corte no desconto do ISP.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2019/08/cropped-cropped-cropped-338121-pa06xs-30-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "ISP sobe 1,3 cêntimos no gasóleo e 1,2 na gasolina em janeiro",
+          "url": "https://eco.sapo.pt/2022/12/30/isp-sobe-13-centimos-no-gasoleo-e-12-na-gasolina-em-janeiro/",
+          "contest": ""
+        },
+        "-NKmsQHYPA838Qmp7tzJ": {
+          "archive": "https://archive.li/wip/56LzE",
+          "description": "O ano não começou da melhor forma para a classe política: as eleições de janeiro foram umas das mais escrutinadas de sempre (o Polígrafo fez mais de 200 \"fact checks\") e não serviram apenas para preencher as cadeiras da Assembleia da República. As mentiras, falsidades e imprecisões proferidas ao longo das quatro semanas que antecederam o sufrágio foram quanto baste para eleger um \"Pinóquio\", mas desengane-se se acha que Ventura perdeu o hábito: o líder do Chega agarrou a taça ao longo dos 12 meses seguintes. Estava eleita a Mentira Nacional do Ano, ainda antes de este terminar.",
+          "flair": "",
+          "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fpoligrafo.sapo.pt%2Fassets%2Fimg%2Fpoligrafo%2Ffacebook-overlay.png&epic=Njc382Sx9B7Reduca0oAKnONsSp0Umsmrv/YN/ymwKXULqQCahItQXAw4rmxm8xoho5j4/gxg3it1t2RwWm1tHgPwkOyXOOHOKmXJW+LVwNKUP8=",
+          "party": "CHEGA",
+          "status": 1,
+          "title": "Mentira Nacional do Ano: Imprecisões e falsidades valem recorde a Ventura e respetiva equipa parlamentar",
+          "url": "https://poligrafo.sapo.pt/politica/artigos/mentira-nacional-do-ano",
+          "contest": ""
+        },
+        "-NKmsjwRR82OkutUSqAU": {
+          "archive": "https://web.archive.org/web/20230102142923/https://www.publico.pt/2022/12/30/politica/noticia/declaracao-medina-dizer-nao-sabia-desencadeou-demissao-pedro-nuno-santos-2033236",
+          "description": "Pedro Nuno Santos já recebeu convites para ser comentador em televisões que, por agora, não aceitou. Ministro demissionário tenciona falar no congresso do PS marcado para 2023.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1765346?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "PS",
+          "status": 1,
+          "title": "Declaração de Medina a dizer que “não sabia” desencadeou demissão de Pedro Nuno Santos",
+          "url": "https://www.publico.pt/2022/12/30/politica/noticia/declaracao-medina-dizer-nao-sabia-desencadeou-demissao-pedro-nuno-santos-2033236",
+          "contest": ""
+        }
+      },
+      "d_5": {
+        "-NIgRwPdrVi3u4TNOAJa": {
+          "archive": "https://web.archive.org/web/20221207115845/https://www.publico.pt/2022/12/05/politica/noticia/seguro-principio-separacao-poderes-beliscado-2030300",
+          "description": "Antigo secretário-geral do PS não quis comentar casos concretos como o do ex-secretário de Estado Miguel Alves ou o do livro do ex-governador do Banco de Portugal.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1757934?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "OUTRO",
+          "status": 1,
+          "title": "Seguro diz que princípio da separação de poderes foi “beliscado”",
+          "url": "https://www.publico.pt/2022/12/05/politica/noticia/seguro-principio-separacao-poderes-beliscado-2030300",
+          "contest": ""
+        },
+        "-NIgSRJqMiO7PCDWKk4U": {
+          "archive": "https://web.archive.org/web/20221207120056/https://www.publico.pt/2022/12/05/sociedade/noticia/procurador-condenado-ha-quatro-anos-corrupcao-demitido-ministerio-publico-2030287",
+          "description": "Magistrado recebeu durante mais de três anos e meio salário bruto de 5600 euros sem trabalhar. Voltou ao Ministério Público já depois da primeira condenação, após uma longa licença sem vencimento.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1757921?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "OUTRO",
+          "status": 1,
+          "title": "Procurador condenado há quatro anos por corrupção foi agora demitido do Ministério Público",
+          "url": "https://www.publico.pt/2022/12/05/sociedade/noticia/procurador-condenado-ha-quatro-anos-corrupcao-demitido-ministerio-publico-2030287",
+          "contest": ""
+        },
+        "-NIgTE5vZONpUP8vnVaR": {
+          "archive": "https://web.archive.org/web/20221207120425/https://eco.sapo.pt/2022/12/05/afinal-gasoleo-sobe-18-centimos-e-gasolina-14-centimos/",
+          "description": "Quando chegar à bomba para abastecer deverá pagar 1,662 euros por litro de gasóleo simples ou por litro de gasolina simples 95. Subida dos combustíveis é ditada por revisão da carga fiscal.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2022/05/cropped-doc-20211017-34558600-lf-20211017-2931-2.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "Afinal, gasóleo sobe 1,8 cêntimos e gasolina 1,4 cêntimos",
+          "url": "https://eco.sapo.pt/2022/12/05/afinal-gasoleo-sobe-18-centimos-e-gasolina-14-centimos/",
+          "contest": ""
+        },
+        "-NIgTkxh9fXhhurFQ9cE": {
+          "archive": "https://archive.ph/wip/NEpXa",
+          "description": "Rita Marques foi demitida como secretária de Estado do Turismo a 29 de novembro mas, quatro dias antes, foi-lhe atribuído um subsídio de alojamento com efeitos retroativos ao início da legislatura.",
+          "flair": "",
+          "image": "https://eco.imgix.net/uploads/2018/07/cropped-ritamarques-011.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+          "party": "PS",
+          "status": 1,
+          "title": "Costa atribui subsídio a Rita Marques quatro dias antes de ser demitida",
+          "url": "https://eco.sapo.pt/2022/12/05/costa-atribui-subsidio-a-rita-marques-quatro-dias-antes-de-ser-demitida/",
+          "contest": ""
+        }
+      },
+      "d_6": {
+        "-NIgSr6_nuMD6oEMWhOG": {
+          "archive": "https://web.archive.org/web/20221207120253/https://24.sapo.pt/atualidade/artigos/altos-quadros-da-defesa-detidos-pela-pj-por-corrupcao",
+          "description": "Em causa estarão as obras de hospital militar de Belém",
+          "flair": "",
+          "image": "https://thumbs.web.sapo.io/?W=1200&H=630&delay_optim=1&tv=1&crop=center&bottom_overlay=https%3A%2F%2Fsapo24.web.sapo.io%2Fassets%2Fimg%2F24-sapo%2Ffacebook-overlay.png&epic=OWVhLNyYbaZ9/X2sVgKL35VRuPXTeQTuJgraXcW3WGPyZQRYlTvxAId0/zHh64y2HprTGnnjhMe6qDM4g6BxCs5lXCTnUK+i8g+FcmH5ZWT22oY=",
+          "party": "OUTRO",
+          "status": 1,
+          "title": "Buscas no Ministério da Defesa: PJ fez cinco detenções por corrupção, três são altos quadros",
+          "url": "https://24.sapo.pt/atualidade/artigos/altos-quadros-da-defesa-detidos-pela-pj-por-corrupcao",
+          "contest": ""
+        },
+        "-NIgTd_nmJD_oUoVrn1L": {
+          "archive": "https://web.archive.org/web/20221207120613/https://www.publico.pt/2022/12/06/sociedade/noticia/governo-aconselha-recurso-centros-saude-ha-14-milhoes-pessoas-medico-familia-2030313",
+          "description": "Na região de Lisboa e Vale do Tejo um quarto das pessoas não tem médico de família. Relatório Health at a Glance volta a mostrar que em Portugal se paga mal aos médicos e aos enfermeiros.",
+          "flair": "",
+          "image": "https://imagens.publico.pt/imagens.aspx/1757976?tp=UH&db=IMAGENS&type=JPG&share=1&o=BarraFacebook_Publico.png",
+          "party": "PS",
+          "status": 1,
+          "title": "Governo aconselha recurso a centros de saúde – mas há 1,4 milhões de pessoas sem médico de família",
+          "url": "https://www.publico.pt/2022/12/06/sociedade/noticia/governo-aconselha-recurso-centros-saude-ha-14-milhoes-pessoas-medico-familia-2030313",
+          "contest": ""
+        }
+      },
+      "d_9": {
+        "-NIqJbeUQI55JPt9WXot": {
+          "archive": "https://web.archive.org/web/20221209095837/https://visao.sapo.pt/atualidade/politica/2022-12-09-ps-indica-marta-temido-para-vice-presidente-da-comissao-de-revisao-constitucional/",
+          "description": "O PS vai indicar a ex-ministra da Saúde Marta Temido para vice-presidente da comissão eventual de revisão constitucional e apresenta um elenco paritário em que o líder parlamentar, Eurico Brilhante Dias, será o último suplente da lista",
+          "flair": "",
+          "image": "https://images.trustinnews.pt/uploads/sites/5/2022/12/39388758_wm.jpg",
+          "party": "PS",
+          "status": 1,
+          "title": "Visão | PS indica Marta Temido para vice-presidente da comissão de revisão constitucional",
+          "url": "https://visao.sapo.pt/atualidade/politica/2022-12-09-ps-indica-marta-temido-para-vice-presidente-da-comissao-de-revisao-constitucional/",
+          "contest": ""
+        }
+      }
+    }
+  },
+  "y_2023": {
+    "m_1": {
+      "d_2": {
+        "-NKmt1dGwG3tx9ThDwDe": {
+          "archive": "https://web.archive.org/web/20230102143042/https://www.jn.pt/economia/salarios-reais-vao-valer-menos-em-2023-do-que-2014-15583508.html?target=conteudo_fechado",
+          "description": "Gastos com alimentação deverão subir 22%. A perda do poder de compra pode ser permanente, avisa especialista.",
+          "flair": "",
+          "image": "https://static.globalnoticias.pt/jn/image.jpg?brand=JN&type=generate&guid=7643b1fa-a45e-4199-9f52-a9d9aa529149&w=800&h=420&watermark=true&t=20230102071400",
+          "party": "PS",
+          "status": 1,
+          "title": "Salários reais vão valer menos em 2023 do que 2014",
+          "url": "https://www.jn.pt/economia/salarios-reais-vao-valer-menos-em-2023-do-que-2014-15583508.html?target=conteudo_fechado",
+          "contest": ""
         }
       }
     }

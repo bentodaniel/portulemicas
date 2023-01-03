@@ -207,6 +207,7 @@ app.post('/api/create/:year/:month/:day', function (req, res) {
             data['title'] = body.title
             data['description'] = body.description
             data['image'] = body.image
+            data['contest'] = ''
             
             let ref = db.ref(`/${year}/${month}/${day}`);
             
