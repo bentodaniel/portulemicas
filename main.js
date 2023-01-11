@@ -7,18 +7,28 @@ const RENDER_API_URL = 'https://portulemicas-api.onrender.com'
 const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
               "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
+const allowedLinks = ["sapo.pt", /* contains:
+    eco.sapo.pt , multinews.sapo.pt , poligrafo.sapo.pt , 24.sapo.pt , sol.sapo.pt , 
+    visao.sapo.pt , rr.sapo.pt
+    */
+    "expresso.pt", "cnnportugal.iol.pt", "cmjornal.pt", "observador.pt",
+    "sicnoticias.pt", "dn.pt", "publico.pt", "jn.pt", "rtp.pt", "sabado.pt", 
+    "jornaldenegocios.pt", "zap.aeiou.pt", "elpais.com", "dinheirovivo.pt",
+    "onovo.pt", "tvi.iol.pt"
+]
+
 const daysTag = document.querySelector(".days");
 const currentCalendarDate = document.querySelector("#calendar-current-year");
 const description = document.querySelector(".description-wrapper");
 const currentNewsListDate = document.querySelector("#news-list-current-year");
 const newsListWrapper = document.querySelector(".news-wrapper");
-const form = document.querySelector(".actions form");
+const addForm = document.querySelector(".actions form");
 const inputLink = document.querySelector(".actions #link");
 const inputPartyName = document.querySelector(".actions #fpartyname");
 const inputFlairName = document.querySelector(".actions #fflairname");
 const submitButton = document.querySelector(".submit-button");
 const countdown = document.querySelector(".countdown");
-const deleteButton = document.querySelector(".deletebtn");
+const deleteButton = document.querySelector(".contestbtn");
 
 var timeleft = 29;
 var interval = setInterval(function(){ 
@@ -77,6 +87,9 @@ const getPartyColor = (party) => {
     }
     else if (partido === 'chega') {
         return '#b0cc0e';
+    }
+    else if (partido === 'independente') {
+        return '#858585';
     }
     else {
         return '#000000';
@@ -176,7 +189,7 @@ const renderDescriptions = (year, month, day) => {
         if (contest && contest !== '') {
             res += `| <p class="link_noticia"><a href="${contest}" target="_blank">CONTESTAÇÃO</a></p>`
         }
-        //res += `<button onclick="document.getElementById('id01').style.display='block'; setRemoveObjectKey(this,\'${obj_key}\')"><i class="fa fa-trash" aria-hidden="true"></i></button>`
+        //res += `<button onclick="openContestForm()"><i class="fa fa-archive" aria-hidden="true"></i></button>`
         res += '</li>\n'
     }
 
@@ -472,7 +485,7 @@ const execute = () => {
 
     /* Listem for submissions of events */
 
-    form.addEventListener("submit", (e) => {
+    addForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
         const partyName = inputPartyName.value;
@@ -487,6 +500,22 @@ const execute = () => {
         if (!newsLink) {
             showToast(0, "Por favor, preencha o link da notícia.")
             //alert("Por favor, preencha o link da notícia.");
+            return;
+        }
+
+        // Check if the link is one of the allowed
+        if (!allowedLinks.some(allowedLink => newsLink.includes(allowedLink))) {
+            showToast(0, "O link indicado não é válido, Por favor, introduza uma notícia de um dos links válidos.")
+            return;
+        }
+
+        // Check if the flair is true/false, if it is, then the link must be poligrafo
+        if ((flair === "verdadeiro" || flair === "falso") && !newsLink.includes("poligrafo")) {
+            showToast(0, "Por favor, utilize flair apenas para notícias do polígrafo.")
+            return;
+        }
+        else if (flair === "" && newsLink.includes("poligrafo")) {
+            showToast(0, "Por favor, inclua um flair para notícias do polígrafo.")
             return;
         }
 
@@ -651,6 +680,18 @@ const createDayWatchers = (daysSelection) => {
         });
     });
 }
+
+function showValidLinks() {
+    var str = ""
+    for (let s of allowedLinks) {
+        str += s + ", \n"
+    }
+    showToast(3, str) 
+}
+
+//function openContestForm() {
+
+//}
 
 /*
 // Description remove buttons

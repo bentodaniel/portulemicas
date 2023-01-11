@@ -169,7 +169,7 @@
 
               <div class="actions">
                 <form>
-                  <label for="link">Link:</label><br>
+                  <label for="link">Link:   <a href="#" onclick="showValidLinks()">(links válidos)</a></label><br>
                   <input type="url" id="link" name="link" placeholder="Link (com http:// ou https://)">
                   
                   <br>
@@ -187,6 +187,7 @@
                         <option value="psd">PSD</option>
                         <option value="il">IL</option>
                         <option value="chega">CHEGA</option>
+                        <option value="independente">Independente</option>
                         <option value="outro">Outro</option>
                       </select>
                     </div>
@@ -213,22 +214,40 @@
               </ul>
             </div>
 
+            <!-- The contest form -->
+            <!--
+            <div class="contest-form-popup" id="contestForm">
+              <form class="contest-form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+            -->
+
             <!--
             <div id="id01" class="modal">
               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
               <form class="modal-content">
                 <div class="container">
-                  <h3>Remover Entrada</h1>
-                  <p>Tem a certeza que deseja remover esta entrada??</p>
+                  <h3>Contestar Entrada</h1>
+                  <p>Para contestar esta polémica tem de inserir o link de uma notícia que prove o contrário.</p>
                 
                   <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'; cancelRemove()" class="cancelbtn">Cancelar</button>
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'; executeRemove()" class="deletebtn">Remover</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'; cancelContest()" class="cancelbtn">Cancelar</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'; executeContest()" class="contestbtn">Remover</button>
                   </div>
                 </div>
               </form>
             </div>
-          -->
+            --->
 
           </div>
 

@@ -527,7 +527,7 @@ footer{
 }
 
 .description-wrapper li button {
-  background-color: rgb(190, 0, 0);
+  background-color: var(--dark);
   border: none;
   color: white;
   text-align: center;
@@ -546,8 +546,13 @@ footer{
   opacity:1;
 }
 
+
+
+
+
+
 /* Float cancel and delete buttons and add an equal width */
-.cancelbtn, .deletebtn {
+.cancelbtn, .contestbtn {
   float: left;
   width: 50%;
   border-radius: 5px;
@@ -560,7 +565,7 @@ footer{
 }
 
 /* Add a color to the delete button */
-.deletebtn {
+.contestbtn {
   background-color: rgb(190, 0, 0);
 }
 
@@ -617,7 +622,7 @@ footer{
 
 /* Change styles for cancel button and delete button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .deletebtn {
+  .cancelbtn, .contestbtn {
      width: 100%;
   }
 }
